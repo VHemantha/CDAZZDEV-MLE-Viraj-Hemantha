@@ -35,6 +35,8 @@ IN_COLAB = "google.colab" in sys.modules
 if IN_COLAB:
     if not Path("/content/repo").exists():
         subprocess.run(["git", "clone", "-q", "{REPO}", "/content/repo"], check=True)
+    else:  # re-run after pushing fixes: always train the latest code
+        subprocess.run(["git", "-C", "/content/repo", "pull", "-q"], check=True)
     os.chdir("/content/repo/task2_genai")
     subprocess.run([sys.executable, "-m", "pip", "install", "-q", "-r", "requirements.txt"], check=True)
     from google.colab import userdata

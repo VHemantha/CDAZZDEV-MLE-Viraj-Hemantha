@@ -118,3 +118,15 @@ def test_every_required_hyperparameter_is_justified():
                 "num_train_epochs", "per_device_train_batch_size", "gradient_accumulation_steps", "max_seq_length"]
     for k in required:
         assert k in HYPERPARAMETERS and len(HYPERPARAMETERS[k][1]) > 40
+
+
+def test_trainable_params_cast_to_fp32_frozen_untouched():
+    torch = pytest.importorskip("torch")
+    from aml_triage.train import cast_trainable_to_fp32
+
+    model = torch.nn.Sequential(torch.nn.Linear(4, 4), torch.nn.Linear(4, 4)).to(torch.bfloat16)
+    model[0].requires_grad_(False)                 # frozen "base"
+    before = cast_trainable_to_fp32(model)
+    assert before == {"torch.bfloat16": 20}
+    assert all(p.dtype == torch.float32 for p in model[1].parameters())
+    assert all(p.dtype == torch.bfloat16 for p in model[0].parameters())

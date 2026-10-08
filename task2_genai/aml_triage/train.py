@@ -188,8 +188,30 @@ def train(train_rows: list[dict], val_rows: list[dict], output_dir: str, *, mode
         train_dataset=Dataset.from_list([{k: r[k] for k in cols} for r in train_rows]),
         eval_dataset=Dataset.from_list([{k: r[k] for k in cols} for r in val_rows]),
         processing_class=tok, peft_config=lora_config())
+    cast_trainable_to_fp32(trainer.model)
     trainer.train()
     return trainer
+
+
+def cast_trainable_to_fp32(model) -> dict[str, int]:
+    """QLoRA keeps the frozen base in 4-bit but the TRAINABLE LoRA weights in fp32.
+
+    Recent PEFT/TRL versions may create the adapters in the model's default dtype
+    (bfloat16 for Qwen2.5). On a T4 we train with fp16 AMP, whose GradScaler cannot
+    unscale bf16 gradients ("_amp_foreach_non_finite_check_and_unscale_cuda not
+    implemented for 'BFloat16'"). Casting only the trainable params to fp32 fixes it
+    and is also numerically safer; memory cost is negligible (~18M params).
+    """
+    import torch
+
+    before: dict[str, int] = {}
+    for p in model.parameters():
+        if p.requires_grad:
+            before[str(p.dtype)] = before.get(str(p.dtype), 0) + p.numel()
+            if p.dtype != torch.float32:
+                p.data = p.data.float()
+    print(f"trainable params by dtype before cast: {before} -> all float32")
+    return before
 
 
 def epoch_losses(log_history: list[dict]) -> list[dict]:
