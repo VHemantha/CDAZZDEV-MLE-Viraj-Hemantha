@@ -1,0 +1,18 @@
+21:07:24 INFO 94/150 cases present, 56 to generate
+21:07:28 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+21:07:28 WARNING batch [90] failed on groq/qwen3.8-27b (1 in a row): Error code: 429 - {'error': {'message': "Request too large for model `qwen/qwen3.8-27b` in organization `org_01m4a9k53ye54t1y5yq4m4rw1j` service tier `on_demand` on output tokens per minute (OTPM): Li
+21:08:02 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+21:08:02 INFO progress: 55 remaining
+21:08:06 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+21:08:06 INFO seed 92 rejected (attempt 1): ungrounded figure: '60,950.75'
+21:08:06 INFO progress: 55 remaining
+21:08:06 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+21:08:06 INFO Retrying request in 48.000000 seconds (retry 1 of 6)
+21:08:57 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+21:08:57 INFO progress: 54 remaining
+21:08:57 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+21:08:58 WARNING batch [95] failed on groq/qwen3.8-27b (1 in a row): Error code: 429 - {'error': {'message': "Request too large for model `qwen/qwen3.8-27b` in organization `org_01m4a9k53ye54t1y5yq4m4rw1j` service tier `on_demand` on output tokens per minute (OTPM): Li
+21:09:28 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+21:09:28 WARNING batch [95] failed on groq/qwen3.8-27b (2 in a row): Error code: 429 - {'error': {'message': "Request too large for model `qwen/qwen3.8-27b` in organization `org_01m4a9k53ye54t1y5yq4m4rw1j` service tier `on_demand` on output tokens per minute (OTPM): Li
+21:09:58 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+21:09:58 WARNING batch [95] failed on groq/qwen3.8-27b (3 in a row): Error code: 429 - {'error': {'message': "Request too large for model `qwen/qwen3.8-27b` in organization `org_01m4a9k53ye54t1y5yq4m4rw1j` service tier `on_demand` on output tokens per minute (OTPM): Li

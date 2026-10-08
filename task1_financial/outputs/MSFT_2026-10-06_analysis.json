@@ -1,0 +1,270 @@
+{
+  "summary": {
+    "ticker": "MSFT",
+    "company_name": "Microsoft Corporation",
+    "sector": "Technology",
+    "industry": "Software - Infrastructure",
+    "currency": "USD",
+    "as_of": "2026-10-06",
+    "current_price": 529.3,
+    "52_week_high": 549.2,
+    "52_week_low": 348.54,
+    "pct_below_52w_high": -3.62,
+    "pe_ratio": 29.26,
+    "pe_ratio_source": "trailing (yfinance)",
+    "market_cap": 3930341244928.0,
+    "ytd_return_pct": 10.14,
+    "momentum_signal": {
+      "label": "Strong Bullish",
+      "score": 0.84,
+      "components": {
+        "trend_long": 1.0,
+        "trend_short": 1.0,
+        "ma_cross": 1.0,
+        "macd": 1.0,
+        "rsi": 0.901,
+        "bollinger": -0.5
+      }
+    }
+  },
+  "technicals": {
+    "as_of": "2026-10-06",
+    "close": 529.3,
+    "sma_50": 493.09,
+    "sma_200": 432.0,
+    "pct_vs_sma_50": 7.34,
+    "pct_vs_sma_200": 22.52,
+    "sma_50_vs_200_pct": 14.14,
+    "last_ma_cross": "golden_cross",
+    "sessions_since_ma_cross": 26,
+    "rsi_14": 68.01,
+    "macd": 9.573,
+    "macd_signal": 8.136,
+    "macd_hist": 1.437,
+    "macd_hist_change_5d": 1.797,
+    "bb_upper": 526.83,
+    "bb_middle": 504.71,
+    "bb_lower": 482.6,
+    "bb_percent_b": 1.056,
+    "bb_bandwidth_pct": 8.76,
+    "bb_bandwidth_percentile_6m": 34.9,
+    "realised_vol_20d_annualised_pct": 20.66,
+    "return_5d_pct": 4.0,
+    "return_20d_pct": 7.16,
+    "return_60d_pct": 35.63
+  },
+  "headline_sentiment": [
+    {
+      "headline": "Microsoft Stock Is on Track to Trail the S&P 500 for a 3rd Straight Year. History Says What Happened After Its Last 2 Streaks.",
+      "sentiment": "negative",
+      "confidence": 0.75,
+      "brief_reason": "Signals continued underperformance versus the S&P 500, implying a negative short\u2011term outlook for Microsoft\u2019s share price.",
+      "published_at": "2026-10-07T06:37:02Z",
+      "publisher": null,
+      "recency_weight": 0.9965,
+      "is_fallback": false
+    },
+    {
+      "headline": "Will AI Take Your Job? Microsoft's AI Chief Now Points To Nobel Laureate's Research Saying Only 5% Of Human Work Is At Risk",
+      "sentiment": "positive",
+      "confidence": 0.78,
+      "brief_reason": "AI chief downplays job\u2011displacement risk, reassuring investors",
+      "published_at": "2026-10-07T05:47:58Z",
+      "publisher": null,
+      "recency_weight": 0.9886,
+      "is_fallback": false
+    },
+    {
+      "headline": "MSFT Stock Nears All-Time High: Xbox Moves To Secure Exclusive Rights To Stream Grand Theft Auto VI, Report Says",
+      "sentiment": "positive",
+      "confidence": 0.92,
+      "brief_reason": "Securing exclusive GTA\u202fVI streaming rights should boost Xbox revenue and support the stock\u2019s upward trajectory.",
+      "published_at": "2026-10-07T03:20:25Z",
+      "publisher": null,
+      "recency_weight": 0.9655,
+      "is_fallback": false
+    },
+    {
+      "headline": "As Microsoft Adapted To AI Megatrend, Sales, Profits Surged. MSFT Leads 9 Joining IBD Best Stock Lists",
+      "sentiment": "positive",
+      "confidence": 0.92,
+      "brief_reason": "Surging sales and profits plus multiple IBD best\u2011stock list inclusions signal strong performance, likely boosting the stock.",
+      "published_at": "2026-10-06T22:55:00Z",
+      "publisher": "Investor's Business Daily",
+      "recency_weight": 0.9252,
+      "is_fallback": false
+    },
+    {
+      "headline": "Google Joins Microsoft, Amazon, and Meta on Constellation\u2019s Energy Roster",
+      "sentiment": "positive",
+      "confidence": 0.78,
+      "brief_reason": "Microsoft\u2019s inclusion in Constellation\u2019s energy roster signals a collaborative partnership, likely boosting its ESG profile.",
+      "published_at": "2026-10-06T20:33:10Z",
+      "publisher": null,
+      "recency_weight": 0.9044,
+      "is_fallback": false
+    },
+    {
+      "headline": "A $1,000 Bet on Microsoft a Decade Ago Crushed the Market by Over 3x",
+      "sentiment": "neutral",
+      "confidence": 0.78,
+      "brief_reason": "The piece discusses historical returns and provides no new information likely to affect Microsoft\u2019s short\u2011term share price.",
+      "published_at": "2026-10-06T19:00:30Z",
+      "publisher": null,
+      "recency_weight": 0.8911,
+      "is_fallback": false
+    },
+    {
+      "headline": "Dear Microsoft Stock Fans, Mark Your Calendars for October 7",
+      "sentiment": "neutral",
+      "confidence": 0.55,
+      "brief_reason": "Headline offers no material information about Microsoft, only a vague date reminder.",
+      "published_at": "2026-10-06T18:55:39Z",
+      "publisher": null,
+      "recency_weight": 0.8904,
+      "is_fallback": false
+    },
+    {
+      "headline": "Jim Cramer: Microsoft\u2019s \u201cMonster\u201d Data Center Play Is Starting to Pay Off",
+      "sentiment": "positive",
+      "confidence": 0.92,
+      "brief_reason": "Cramer\u2019s comment signals that Microsoft\u2019s data\u2011center investments are yielding results, likely boosting earnings outlook.",
+      "published_at": "2026-10-06T18:04:01Z",
+      "publisher": null,
+      "recency_weight": 0.883,
+      "is_fallback": false
+    },
+    {
+      "headline": "MSFT Rises 41% in 6 Months on Solid AI Demand: Should You Hold Now?",
+      "sentiment": "positive",
+      "confidence": 0.78,
+      "brief_reason": "Strong AI demand is highlighted as driving a substantial recent price increase for Microsoft.",
+      "published_at": "2026-10-06T14:19:00Z",
+      "publisher": "TradingView",
+      "recency_weight": 0.8517,
+      "is_fallback": false
+    },
+    {
+      "headline": "Microsoft Stock (MSFT) Opinions on AI Model Shifts",
+      "sentiment": "neutral",
+      "confidence": 0.55,
+      "brief_reason": "The headline merely references opinions on AI model changes without indicating a clear positive or negative impact on the stock.",
+      "published_at": "2026-10-06T14:04:00Z",
+      "publisher": "Quiver Quantitative",
+      "recency_weight": 0.8497,
+      "is_fallback": false
+    },
+    {
+      "headline": "Microsoft (NASDAQ:MSFT): Strong Growth Meets High-Quality Technical Setup",
+      "sentiment": "positive",
+      "confidence": 0.92,
+      "brief_reason": "Indicates strong earnings growth and favorable technical chart, likely boosting investor sentiment",
+      "published_at": "2026-10-06T12:30:31Z",
+      "publisher": "ChartMill",
+      "recency_weight": 0.837,
+      "is_fallback": false
+    },
+    {
+      "headline": "Microsoft May Be Winning Enterprise AI, but When Does the Stock Catch Up?",
+      "sentiment": "neutral",
+      "confidence": 0.55,
+      "brief_reason": "Speculative AI leadership praise without concrete catalyst, so short\u2011term stock impact unclear.",
+      "published_at": "2026-10-06T12:05:33Z",
+      "publisher": "AOL.com",
+      "recency_weight": 0.8336,
+      "is_fallback": false
+    },
+    {
+      "headline": "Microsoft (MSFT) Signs Long Term Xbox Deal And Expands AI Partner Ties",
+      "sentiment": "positive",
+      "confidence": 0.93,
+      "brief_reason": "Long\u2011term Xbox agreement and expanded AI partnerships are likely to boost revenue and growth prospects.",
+      "published_at": "2026-10-06T06:51:19Z",
+      "publisher": "Simply Wall Street",
+      "recency_weight": 0.7927,
+      "is_fallback": false
+    },
+    {
+      "headline": "MSFT Stock Gains: Melius Research Calls Microsoft \u2018Adults In Charge\u2019 Of AI, Upgrades To \u2018Buy\u2019",
+      "sentiment": "positive",
+      "confidence": 0.93,
+      "brief_reason": "Melius Research upgraded Microsoft to Buy, signaling positive outlook and likely stock gain",
+      "published_at": "2026-10-06T01:58:00Z",
+      "publisher": "TradingView",
+      "recency_weight": 0.7562,
+      "is_fallback": false
+    },
+    {
+      "headline": "Meta And Microsoft Reportedly Trim Anthropic Reliance as Internal AI Tools Take Center Stage",
+      "sentiment": "positive",
+      "confidence": 0.78,
+      "brief_reason": "Microsoft shifting to internal AI tools reduces external costs and signals stronger in\u2011house AI capability.",
+      "published_at": "2026-10-05T23:06:12Z",
+      "publisher": "Yahoo Finance",
+      "recency_weight": 0.7356,
+      "is_fallback": false
+    }
+  ],
+  "aggregate_sentiment": {
+    "score": 0.6511,
+    "label": "positive",
+    "n_headlines": 15,
+    "n_valid": 15,
+    "counts": {
+      "positive": 10,
+      "negative": 1,
+      "neutral": 4
+    },
+    "mean_confidence": 0.789,
+    "method": "confidence x recency (half-life 3d) weighted mean polarity"
+  },
+  "signal": {
+    "signal": {
+      "signal": "Hold",
+      "conviction": 0.65,
+      "indicator_interactions": [
+        {
+          "indicators": [
+            "sma_50",
+            "sma_200",
+            "macd"
+          ],
+          "interpretation": "Price is well above both short\u2011 and long\u2011term averages and MACD is positive with a rising histogram, indicating a strong uptrend with intact momentum",
+          "implication": "bullish"
+        },
+        {
+          "indicators": [
+            "rsi_14",
+            "bb_percent_b"
+          ],
+          "interpretation": "RSI is near the overbought threshold and %B is above 1, meaning the price is trading above the upper Bollinger band and may be exhausted",
+          "implication": "bearish"
+        },
+        {
+          "indicators": [
+            "news_sentiment",
+            "trend_indicators"
+          ],
+          "interpretation": "Positive news sentiment (+0.65) aligns with the bullish trend signals, adding confirmation to the technical picture",
+          "implication": "bullish"
+        }
+      ],
+      "justification": "Microsoft is trading well above its 50\u2011day and 200\u2011day moving averages, and a recent golden cross together with a rising MACD histogram confirms a robust uptrend. However, the RSI of 68 and a %B above 1 signal that the rally may be nearing exhaustion, raising the risk of a short\u2011term pullback. The upbeat news sentiment reinforces the bullish bias but does not fully offset the overbought technical warnings. Given the mixed signals, a neutral stance is prudent for the next 1\u20113 months. The overall conviction reflects moderate confidence in the current trend while acknowledging downside risk.",
+      "key_risks": [
+        "RSI crossing into overbought territory and price above the upper Bollinger band could trigger a correction",
+        "Adverse earnings or macro\u2011economic developments could reverse the positive sentiment",
+        "Unexpected negative news could outweigh the current bullish technical setup"
+      ],
+      "time_horizon": "1-3 months"
+    },
+    "source": "llm",
+    "model": "openai/gpt-oss-120b",
+    "attempts": 1
+  },
+  "llm": {
+    "provider": "groq",
+    "calls": 16,
+    "validation_failures": []
+  },
+  "warnings": []
+}

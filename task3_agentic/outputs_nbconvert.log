@@ -1,0 +1,396 @@
+[NbConvertApp] Converting notebook notebooks/Task3_Multi_Agent_Research.ipynb to notebook
+C:\Users\Techon Computers\AppData\Local\Programs\Python\Python312\Lib\site-packages\zmq\_future.py:718: RuntimeWarning: Proactor event loop does not implement add_reader family of methods required for zmq. Registering an additional selector thread for add_reader support via tornado. Use `asyncio.set_event_loop_policy(WindowsSelectorEventLoopPolicy())` to avoid this warning.
+  self._get_loop()
+[IPKernelApp] WARNING | Kernel is running over TCP without encryption. All communication (including code and outputs) is sent in plain text and is susceptible to eavesdropping. Use IPC transport or launch with kernel manager-provisioned CurveZMQ keys to enable transport encryption.
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\Techon Computers\AppData\Local\Programs\Python\Python312\Scripts\jupyter-nbconvert.EXE\__main__.py", line 7, in <module>
+  File "C:\Users\Techon Computers\AppData\Local\Programs\Python\Python312\Lib\site-packages\jupyter_core\application.py", line 284, in launch_instance
+    super().launch_instance(argv=argv, **kwargs)
+  File "C:\Users\Techon Computers\AppData\Local\Programs\Python\Python312\Lib\site-packages\traitlets\config\application.py", line 1080, in launch_instance
+    app.start()
+  File "C:\Users\Techon Computers\AppData\Local\Programs\Python\Python312\Lib\site-packages\nbconvert\nbconvertapp.py", line 420, in start
+    self.convert_notebooks()
+  File "C:\Users\Techon Computers\AppData\Local\Programs\Python\Python312\Lib\site-packages\nbconvert\nbconvertapp.py", line 597, in convert_notebooks
+    self.convert_single_notebook(notebook_filename)
+  File "C:\Users\Techon Computers\AppData\Local\Programs\Python\Python312\Lib\site-packages\nbconvert\nbconvertapp.py", line 563, in convert_single_notebook
+    output, resources = self.export_single_notebook(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Techon Computers\AppData\Local\Programs\Python\Python312\Lib\site-packages\nbconvert\nbconvertapp.py", line 487, in export_single_notebook
+    output, resources = self.exporter.from_filename(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Techon Computers\AppData\Local\Programs\Python\Python312\Lib\site-packages\nbconvert\exporters\exporter.py", line 201, in from_filename
+    return self.from_file(f, resources=resources, **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Techon Computers\AppData\Local\Programs\Python\Python312\Lib\site-packages\nbconvert\exporters\exporter.py", line 220, in from_file
+    return self.from_notebook_node(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Techon Computers\AppData\Local\Programs\Python\Python312\Lib\site-packages\nbconvert\exporters\notebook.py", line 36, in from_notebook_node
+    nb_copy, resources = super().from_notebook_node(nb, resources, **kw)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Techon Computers\AppData\Local\Programs\Python\Python312\Lib\site-packages\nbconvert\exporters\exporter.py", line 154, in from_notebook_node
+    nb_copy, resources = self._preprocess(nb_copy, resources)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Techon Computers\AppData\Local\Programs\Python\Python312\Lib\site-packages\nbconvert\exporters\exporter.py", line 353, in _preprocess
+    nbc, resc = preprocessor(nbc, resc)
+                ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Techon Computers\AppData\Local\Programs\Python\Python312\Lib\site-packages\nbconvert\preprocessors\base.py", line 48, in __call__
+    return self.preprocess(nb, resources)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Techon Computers\AppData\Local\Programs\Python\Python312\Lib\site-packages\nbconvert\preprocessors\execute.py", line 103, in preprocess
+    self.preprocess_cell(cell, resources, index)
+  File "C:\Users\Techon Computers\AppData\Local\Programs\Python\Python312\Lib\site-packages\nbconvert\preprocessors\execute.py", line 124, in preprocess_cell
+    cell = self.execute_cell(cell, index, store_history=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Techon Computers\AppData\Local\Programs\Python\Python312\Lib\site-packages\jupyter_core\utils\__init__.py", line 165, in wrapped
+    return loop.run_until_complete(inner)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Techon Computers\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_events.py", line 664, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\Techon Computers\AppData\Local\Programs\Python\Python312\Lib\site-packages\nbclient\client.py", line 1062, in async_execute_cell
+    await self._check_raise_for_error(cell, cell_index, exec_reply)
+  File "C:\Users\Techon Computers\AppData\Local\Programs\Python\Python312\Lib\site-packages\nbclient\client.py", line 918, in _check_raise_for_error
+    raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)
+nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
+------------------
+from research_agents.research import run_single_agent
+from research_agents.render import report_markdown
+T.set_fault_injection({"get_news": 1})
+TRACER.new_session()
+session = run_single_agent(TICKER)
+T.set_fault_injection({})
+------------------
+
+----- stdout -----
+=== Research agent | thread single-4dbf47 ===
+----- stdout -----
+  [research_agent] step 1 THINK (openai/gpt-oss-20b): Need price data, volatility, news sentiment, web search.
+  [research_agent] step 1 ACT  : get_price_data({"period": "6mo", "ticker": "MSFT"})
+----- stdout -----
+    ✓ [research_agent] TOOL get_price_data({"ticker": "MSFT", "period": "6mo"}) -> ok in 441 ms | {"ticker": "MSFT", "period": "6mo", "n_bars": 128, "start": "2026-04-07", "end": "2026-10-07", "last_close": …
+----- stdout -----
+  [research_agent] step 2 THINK (openai/gpt-oss-20b): Need volatility, sentiment, news, web search.
+  [research_agent] step 2 ACT  : calculate_volatility({"ticker": "MSFT", "window": 30})
+----- stdout -----
+    ✓ [research_agent] TOOL calculate_volatility({"ticker": "MSFT", "window": 30}) -> ok in 820 ms | {"ticker": "MSFT", "window_days": 30, "annualised_vol_pct": 22.01, "one_year_vol_pct": 32.3, "vol_percentile_…
+----- stdout -----
+  [research_agent] step 3 THINK (openai/gpt-oss-20b): Need news sentiment.
+  [research_agent] step 3 ACT  : get_news({"n": 10, "ticker": "MSFT"})
+    ✗ [research_agent] TOOL get_news({"ticker": "MSFT", "n": 10}) -> error in 0 ms | {"error": "get_news unavailable (simulated provider outage)", "hint": "use an alternative tool or retry with …
+------------------
+
+[31m---------------------------------------------------------------------------[39m
+[31mRateLimitError[39m                            Traceback (most recent call last)
+[36mFile [39m[32m~\AppData\Local\Programs\Python\Python312\Lib\site-packages\langchain_openai\chat_models\base.py:1904[39m, in [36mBaseChatOpenAI._generate[39m[34m(self, messages, stop, run_manager, **kwargs)[39m
+[32m   1903[39m [38;5;28;01melse[39;00m:
+[32m-> [39m[32m1904[39m     raw_response = [30;43mself[39;49m[30;43m.[39;49m[30;43mclient[39;49m[30;43m.[39;49m[30;43mwith_raw_response[39;49m[30;43m.[39;49m[30;43mcreate[39;49m[30;43m([39;49m[30;43m*[39;49m[30;43m*[39;49m[30;43mpayload[39;49m[30;43m)[39;49m
+[32m   1905[39m     response = raw_response.parse()
+
+[36mFile [39m[32m~\AppData\Local\Programs\Python\Python312\Lib\site-packages\openai\_legacy_response.py:369[39m, in [36mto_raw_response_wrapper.<locals>.wrapped[39m[34m(*args, **kwargs)[39m
+[32m    367[39m kwargs[[33m"[39m[33mextra_headers[39m[33m"[39m] = extra_headers
+[32m--> [39m[32m369[39m [38;5;28;01mreturn[39;00m cast(LegacyAPIResponse[R], [30;43mfunc[39;49m[30;43m([39;49m[30;43m*[39;49m[30;43margs[39;49m[30;43m,[39;49m[30;43m [39;49m[30;43m*[39;49m[30;43m*[39;49m[30;43mkwargs[39;49m[30;43m)[39;49m)
+
+[36mFile [39m[32m~\AppData\Local\Programs\Python\Python312\Lib\site-packages\openai\_utils\_utils.py:298[39m, in [36mrequired_args.<locals>.inner.<locals>.wrapper[39m[34m(*args, **kwargs)[39m
+[32m    297[39m     [38;5;28;01mraise[39;00m [38;5;167;01mTypeError[39;00m(msg)
+[32m--> [39m[32m298[39m [38;5;28;01mreturn[39;00m [30;43mfunc[39;49m[30;43m([39;49m[30;43m*[39;49m[30;43margs[39;49m[30;43m,[39;49m[30;43m [39;49m[30;43m*[39;49m[30;43m*[39;49m[30;43mkwargs[39;49m[30;43m)[39;49m
+
+[36mFile [39m[32m~\AppData\Local\Programs\Python\Python312\Lib\site-packages\openai\resources\chat\completions\completions.py:1308[39m, in [36mCompletions.create[39m[34m(self, messages, model, audio, frequency_penalty, function_call, functions, logit_bias, logprobs, max_completion_tokens, max_tokens, metadata, modalities, moderation, n, parallel_tool_calls, prediction, presence_penalty, prompt_cache_key, prompt_cache_options, prompt_cache_retention, reasoning_effort, response_format, safety_identifier, seed, service_tier, stop, store, stream, stream_options, temperature, tool_choice, tools, top_logprobs, top_p, user, verbosity, web_search_options, extra_headers, extra_query, extra_body, timeout)[39m
+[32m   1307[39m validate_response_format(response_format)
+[32m-> [39m[32m1308[39m [38;5;28;01mreturn[39;00m [30;43mself[39;49m[30;43m.[39;49m[30;43m_post[39;49m[30;43m([39;49m
+[32m   1309[39m [30;43m    [39;49m[30;43m"[39;49m[30;43m/chat/completions[39;49m[30;43m"[39;49m[30;43m,[39;49m
+[32m   1310[39m [30;43m    [39;49m[30;43mbody[39;49m[30;43m=[39;49m[30;43mmaybe_transform[39;49m[30;43m([39;49m
+[32m   1311[39m [30;43m        [39;49m[30;43m{[39;49m
+[32m   1312[39m [30;43m            [39;49m[30;43m"[39;49m[30;43mmessages[39;49m[30;43m"[39;49m[30;43m:[39;49m[30;43m [39;49m[30;43mmessages[39;49m[30;43m,[39;49m
+[32m   1313[39m [30;43m            [39;49m[30;43m"[39;49m[30;43mmodel[39;49m[30;43m"[39;49m[30;43m:[39;49m[30;43m [39;49m[30;43mmodel[39;49m[30;43m,[39;49m
+[32m   1314[39m [30;43m            [39;49m[30;43m"[39;49m[30;43maudio[39;49m[30;43m"[39;49m[30;43m:[39;49m[30;43m [39;49m[30;43maudio[39;49m[30;43m,[39;49m
+[32m   1315[39m [30;43m            [39;49m[30;43m"[39;49m[30;43mfrequency_penalty[39;49m[30;43m"[39;49m[30;43m:[39;49m[30;43m [39;49m[30;43mfrequency_penalty[39;49m[30;43m,[39;49m
+[32m   1316[39m [30;43m            [39;49m[30;43m"[39;49m[30;43mfunction_call[39;49m[30;43m"[39;49m[30;43m:[39;49m[30;43m [39;49m[30;43mfunction_call[39;49m[30;43m,[39;49m
+[32m   1317[39m [30;43m            [39;49m[30;43m"[39;49m[30;43mfunctions[39;49m[30;43m"[39;49m[30;43m:[39;49m[30;43m [39;49m[30;43mfunctions[39;49m[30;43m,[39;49m
+[32m   1318[39m [30;43m            [39;49m[30;43m"[39;49m[30;43mlogit_bias[39;49m[30;43m"[39;49m[30;43m:[39;49m[30;43m [39;49m[30;43mlogit_bias[39;49m[30;43m,[39;49m
+[32m   1319[39m [30;43m            [39;49m[30;43m"[39;49m[30;43mlogprobs[39;49m[30;43m"[39;49m[30;43m:[39;49m[30;43m [39;49m[30;43mlogprobs[39;49m[30;43m,[39;49m
+[32m   1320[39m [30;43m            [39;49m[30;43m"[39;49m[30;43mmax_completion_tokens[39;49m[30;43m"[39;49m[30;43m:[39;49m[30;43m [39;49m[30;43mmax_completion_tokens[39;49m[30;43m,[39;49m
+[32m   1321[39m [30;43m            [39;49m[30;43m"[39;49m[30;43mmax_tokens[39;49m[30;43m"[39;49m[30;43m:[39;49m[30;43m [39;49m[30;43mmax_tokens[39;49m[30;43m,[39;49m
+[32m   1322[39m [30;43m            [39;49m[30;43m"[39;49m[30;43mmetadata[39;49m[30;43m"[39;49m[30;43m:[39;49m[30;43m [39;49m[30;43mmetadata[39;49m[30;43m,[39;49m
+[32m   1323[39m [30;43m            [39;49m[30;43m"[39;49m[30;43mmodalities[39;49m[30;43m"[39;49m[30;43m:[39;49m[30;43m [39;49m[30;43mmodalities[39;49m[30;43m,[39;49m
+[32m   1324[39m [30;43m            [39;49m[30;43m"[39;49m[30;43mmoderation[39;49m[30;43m"[39;49m[30;43m:[39;49m[30;43m [39;49m[30;43mmoderation[39;49m[30;43m,[39;49m
+[32m   1325[39m [30;43m            [39;49m[30;43m"[39;49m[30;43mn[39;49m[30;43m"[39;49m[30;43m:[39;49m[30;43m [39;49m[30;43mn[39;49m[30;43m,[39;49m
+[32m   1326[39m [30;43m            [39;49m[30;43m"[39;49m[30;43mparallel_tool_calls[39;49m[30;43m"[39;49m[30;43m:[39;49m[30;43m [39;49m[30;43mparallel_tool_calls[39;49m[30;43m,[39;49m
+[32m   1327[39m [30;43m            [39;49m[30;43m"[39;49m[30;43mprediction[39;49m[30;43m"[39;49m[30;43m:[39;49m[30;43m [39;49m[30;43mprediction[39;49m[30;43m,[39;49m
+[32m   1328[39m [30;43m            [39;49m[30;43m"[39;49m[30;43mpresence_penalty[39;49m[30;43m"[39;49m[30;43m:[39;49m[30;43m [39;49m[30;43mpresence_penalty[39;49m[30;43m,[39;49m
+[32m   1329[39m [30;43m            [39;49m[30;43m"[39;49m[30;43mprompt_cache_key[39;49m[30;43m"[39;49m[30;43m:[39;49m[30;43m [39;49m[30;43mprompt_cache_key[39;49m[30;43m,[39;49m
+[32m   1330[39m [30;43m            [39;49m[30;43m"[39;49m[30;43mprompt_cache_options[39;49m[30;43m"[39;49m[30;43m:[39;49m[30;43m [39;49m[30;43mprompt_cache_options[39;49m[30;43m,[39;49m
+[32m   1331[39m [30;43m            [39;49m[30;43m"[39;49m[30;43mprompt_cache_retention[39;49m[30;43m"[39;49m[30;43m:[39;49m[30;43m [39;49m[30;43mprompt_cache_retention[39;49m[30;43m,[39;49m
+[32m   1332[39m [30;43m            [39;49m[30;43m"[39;49m[30;43mreasoning_effort[39;49m[30;43m"[39;49m[30;43m:[39;49m[30;43m [39;49m[30;43mreasoning_effort[39;49m[30;43m,[39;49m
+[32m   1333[39m [30;43m            [39;49m[30;43m"[39;49m[30;43mresponse_format[39;49m[30;43m"[39;49m[30;43m:[39;49m[30;43m [39;49m[30;43mresponse_format[39;49m[30;43m,[39;49m
+[32m   1334[39m [30;43m            [39;49m[30;43m"[39;49m[30;43msafety_identifier[39;49m[30;43m"[39;49m[30;43m:[39;49m[30;43m [39;49m[30;43msafety_identifier[39;49m[30;43m,[39;49m
+[32m   1335[39m [30;43m            [39;49m[30;43m"[39;49m[30;43mseed[39;49m[30;43m"[39;49m[30;43m:[39;49m[30;43m [39;49m[30;43mseed[39;49m[30;43m,[39;49m
+[32m   1336[39m [30;43m            [39;49m[30;43m"[39;49m[30;43mservice_tier[39;49m[30;43m"[39;49m[30;43m:[39;49m[30;43m [39;49m[30;43mservice_tier[39;49m[30;43m,[39;49m
+[32m   1337[39m [30;43m            [39;49m[30;43m"[39;49m[30;43mstop[39;49m[30;43m"[39;49m[30;43m:[39;49m[30;43m [39;49m[30;43mstop[39;49m[30;43m,[39;49m
+[32m   1338[39m [30;43m            [39;49m[30;43m"[39;49m[30;43mstore[39;49m[30;43m"[39;49m[30;43m:[39;49m[30;43m [39;49m[30;43mstore[39;49m[30;43m,[39;49m
+[32m   1339[39m [30;43m            [39;49m[30;43m"[39;49m[30;43mstream[39;49m[30;43m"[39;49m[30;43m:[39;49m[30;43m [39;49m[30;43mstream[39;49m[30;43m,[39;49m
+[32m   1340[39m [30;43m            [39;49m[30;43m"[39;49m[30;43mstream_options[39;49m[30;43m"[39;49m[30;43m:[39;49m[30;43m [39;49m[30;43mstream_options[39;49m[30;43m,[39;49m
+[32m   1341[39m [30;43m            [39;49m[30;43m"[39;49m[30;43mtemperature[39;49m[30;43m"[39;49m[30;43m:[39;49m[30;43m [39;49m[30;43mtemperature[39;49m[30;43m,[39;49m
+[32m   1342[39m [30;43m            [39;49m[30;43m"[39;49m[30;43mtool_choice[39;49m[30;43m"[39;49m[30;43m:[39;49m[30;43m [39;49m[30;43mtool_choice[39;49m[30;43m,[39;49m
+[32m   1343[39m [30;43m            [39;49m[30;43m"[39;49m[30;43mtools[39;49m[30;43m"[39;49m[30;43m:[39;49m[30;43m [39;49m[30;43mtools[39;49m[30;43m,[39;49m
+[32m   1344[39m [30;43m            [39;49m[30;43m"[39;49m[30;43mtop_logprobs[39;49m[30;43m"[39;49m[30;43m:[39;49m[30;43m [39;49m[30;43mtop_logprobs[39;49m[30;43m,[39;49m
+[32m   1345[39m [30;43m            [39;49m[30;43m"[39;49m[30;43mtop_p[39;49m[30;43m"[39;49m[30;43m:[39;49m[30;43m [39;49m[30;43mtop_p[39;49m[30;43m,[39;49m
+[32m   1346[39m [30;43m            [39;49m[30;43m"[39;49m[30;43muser[39;49m[30;43m"[39;49m[30;43m:[39;49m[30;43m [39;49m[30;43muser[39;49m[30;43m,[39;49m
+[32m   1347[39m [30;43m            [39;49m[30;43m"[39;49m[30;43mverbosity[39;49m[30;43m"[39;49m[30;43m:[39;49m[30;43m [39;49m[30;43mverbosity[39;49m[30;43m,[39;49m
+[32m   1348[39m [30;43m            [39;49m[30;43m"[39;49m[30;43mweb_search_options[39;49m[30;43m"[39;49m[30;43m:[39;49m[30;43m [39;49m[30;43mweb_search_options[39;49m[30;43m,[39;49m
+[32m   1349[39m [30;43m        [39;49m[30;43m}[39;49m[30;43m,[39;49m
+[32m   1350[39m [30;43m        [39;49m[30;43mcompletion_create_params[39;49m[30;43m.[39;49m[30;43mCompletionCreateParamsStreaming[39;49m
+[32m   1351[39m [30;43m        [39;49m[30;43;01mif[39;49;00m[30;43m [39;49m[30;43mstream[39;49m
+[32m   1352[39m [30;43m        [39;49m[30;43;01melse[39;49;00m[30;43m [39;49m[30;43mcompletion_create_params[39;49m[30;43m.[39;49m[30;43mCompletionCreateParamsNonStreaming[39;49m[30;43m,[39;49m
+[32m   1353[39m [30;43m    [39;49m[30;43m)[39;49m[30;43m,[39;49m
+[32m   1354[39m [30;43m    [39;49m[30;43moptions[39;49m[30;43m=[39;49m[30;43mmake_request_options[39;49m[30;43m([39;49m
+[32m   1355[39m [30;43m        [39;49m[30;43mextra_headers[39;49m[30;43m=[39;49m[30;43mextra_headers[39;49m[30;43m,[39;49m
+[32m   1356[39m [30;43m        [39;49m[30;43mextra_query[39;49m[30;43m=[39;49m[30;43mextra_query[39;49m[30;43m,[39;49m
+[32m   1357[39m [30;43m        [39;49m[30;43mextra_body[39;49m[30;43m=[39;49m[30;43mextra_body[39;49m[30;43m,[39;49m
+[32m   1358[39m [30;43m        [39;49m[30;43mtimeout[39;49m[30;43m=[39;49m[30;43mtimeout[39;49m[30;43m,[39;49m
+[32m   1359[39m [30;43m        [39;49m[30;43msecurity[39;49m[30;43m=[39;49m[30;43m{[39;49m[30;43m"[39;49m[30;43mbearer_auth[39;49m[30;43m"[39;49m[30;43m:[39;49m[30;43m [39;49m[30;43;01mTrue[39;49;00m[30;43m}[39;49m[30;43m,[39;49m
+[32m   1360[39m [30;43m    [39;49m[30;43m)[39;49m[30;43m,[39;49m
+[32m   1361[39m [30;43m    [39;49m[30;43mcast_to[39;49m[30;43m=[39;49m[30;43mChatCompletion[39;49m[30;43m,[39;49m
+[32m   1362[39m [30;43m    [39;49m[30;43mstream[39;49m[30;43m=[39;49m[30;43mstream[39;49m[30;43m [39;49m[30;43;01mor[39;49;00m[30;43m [39;49m[30;43;01mFalse[39;49;00m[30;43m,[39;49m
+[32m   1363[39m [30;43m    [39;49m[30;43mstream_cls[39;49m[30;43m=[39;49m[30;43mStream[39;49m[30;43m[[39;49m[30;43mChatCompletionChunk[39;49m[30;43m][39;49m[30;43m,[39;49m
+[32m   1364[39m [30;43m[39;49m[30;43m)[39;49m
+
+[36mFile [39m[32m~\AppData\Local\Programs\Python\Python312\Lib\site-packages\openai\_base_client.py:1378[39m, in [36mSyncAPIClient.post[39m[34m(self, path, cast_to, body, content, options, files, stream, stream_cls)[39m
+[32m   1375[39m opts = FinalRequestOptions.construct(
+[32m   1376[39m     method=[33m"[39m[33mpost[39m[33m"[39m, url=path, json_data=body, content=content, files=to_httpx_files(files), **options
+[32m   1377[39m )
+[32m-> [39m[32m1378[39m [38;5;28;01mreturn[39;00m cast(ResponseT, [30;43mself[39;49m[30;43m.[39;49m[30;43mrequest[39;49m[30;43m([39;49m[30;43mcast_to[39;49m[30;43m,[39;49m[30;43m [39;49m[30;43mopts[39;49m[30;43m,[39;49m[30;43m [39;49m[30;43mstream[39;49m[30;43m=[39;49m[30;43mstream[39;49m[30;43m,[39;49m[30;43m [39;49m[30;43mstream_cls[39;49m[30;43m=[39;49m[30;43mstream_cls[39;49m[30;43m)[39;49m)
+
+[36mFile [39m[32m~\AppData\Local\Programs\Python\Python312\Lib\site-packages\openai\_base_client.py:1151[39m, in [36mSyncAPIClient.request[39m[34m(self, cast_to, options, stream, stream_cls)[39m
+[32m   1150[39m     log.debug([33m"[39m[33mRe-raising status error[39m[33m"[39m)
+[32m-> [39m[32m1151[39m     [38;5;28;01mraise[39;00m [38;5;28mself[39m._make_status_error_from_response(err.response) [38;5;28;01mfrom[39;00m[38;5;250m [39m[38;5;28;01mNone[39;00m
+[32m   1153[39m [38;5;28;01mbreak[39;00m
+
+[31mRateLimitError[39m: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01m4a9k53ye54t1y5yq4m4rw1j` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 198899, Requested 1549. Please try again in 3m13.535999999s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+
+The above exception was the direct cause of the following exception:
+
+[31mOpenAIRateLimitError[39m                      Traceback (most recent call last)
+[36mCell[39m[36m [39m[32mIn[5][39m[32m, line 5[39m
+[32m      1[39m [38;5;28;01mfrom[39;00m research_agents.research [38;5;28;01mimport[39;00m run_single_agent
+[32m      2[39m [38;5;28;01mfrom[39;00m research_agents.render [38;5;28;01mimport[39;00m report_markdown
+[32m      3[39m T.set_fault_injection({[33m"get_news"[39m: [32m1[39m})
+[32m      4[39m TRACER.new_session()
+[32m----> [39m[32m5[39m session = run_single_agent(TICKER)
+[32m      6[39m T.set_fault_injection({})
+
+[36mFile [39m[32m~\Documents\Assesment\task3_agentic\research_agents\research.py:47[39m, in [36mrun_single_agent[39m[34m(ticker)[39m
+[32m     45[39m thread_id = [33mf[39m[33m"[39m[33msingle-[39m[38;5;132;01m{[39;00muuid.uuid4().hex[:[32m6[39m][38;5;132;01m}[39;00m[33m"[39m
+[32m     46[39m TRACER.say([33mf[39m[33m"[39m[33m=== Research agent | thread [39m[38;5;132;01m{[39;00mthread_id[38;5;132;01m}[39;00m[33m ===[39m[33m"[39m)
+[32m---> [39m[32m47[39m messages = [30;43mrun_agent[39;49m[30;43m([39;49m[30;43mgraph[39;49m[30;43m,[39;49m[30;43m [39;49m[30;43m"[39;49m[30;43mresearch_agent[39;49m[30;43m"[39;49m[30;43m,[39;49m[30;43m [39;49m[30;43mRESEARCH_QUERY[39;49m[30;43m.[39;49m[30;43msubstitute[39;49m[30;43m([39;49m[30;43mticker[39;49m[30;43m=[39;49m[30;43mticker[39;49m[30;43m)[39;49m[30;43m,[39;49m[30;43m [39;49m[30;43mthread_id[39;49m[30;43m)[39;49m
+[32m     48[39m token = TRACER.set_agent([33m"[39m[33mresearch_agent[39m[33m"[39m)
+[32m     49[39m [38;5;28;01mtry[39;00m:
+
+[36mFile [39m[32m~\Documents\Assesment\task3_agentic\research_agents\agent.py:154[39m, in [36mrun_agent[39m[34m(graph, role, user_message, thread_id)[39m
+[32m    152[39m         cfg[[33m"[39m[33mconfigurable[39m[33m"[39m] = {[33m"[39m[33mthread_id[39m[33m"[39m: thread_id}
+[32m    153[39m     [38;5;66;03m# steps resets per user turn so follow-ups get a fresh budget[39;00m
+[32m--> [39m[32m154[39m     out = [30;43mgraph[39;49m[30;43m.[39;49m[30;43minvoke[39;49m[30;43m([39;49m[30;43m{[39;49m[30;43m"[39;49m[30;43mmessages[39;49m[30;43m"[39;49m[30;43m:[39;49m[30;43m [39;49m[30;43m[[39;49m[30;43m([39;49m[30;43m"[39;49m[30;43muser[39;49m[30;43m"[39;49m[30;43m,[39;49m[30;43m [39;49m[30;43muser_message[39;49m[30;43m)[39;49m[30;43m][39;49m[30;43m,[39;49m[30;43m [39;49m[30;43m"[39;49m[30;43msteps[39;49m[30;43m"[39;49m[30;43m:[39;49m[30;43m [39;49m[30;43m0[39;49m[30;43m}[39;49m[30;43m,[39;49m[30;43m [39;49m[30;43mcfg[39;49m[30;43m)[39;49m
+[32m    155[39m     [38;5;28;01mreturn[39;00m out[[33m"[39m[33mmessages[39m[33m"[39m]
+[32m    156[39m [38;5;28;01mfinally[39;00m:
+
+[36mFile [39m[32m~\AppData\Local\Programs\Python\Python312\Lib\site-packages\langgraph\pregel\main.py:3913[39m, in [36mPregel.invoke[39m[34m(self, input, config, context, stream_mode, print_mode, output_keys, interrupt_before, interrupt_after, durability, control, version, **kwargs)[39m
+[32m   3910[39m             chunks.append(chunk)
+[32m   3911[39m [38;5;28;01melse[39;00m:
+[32m   3912[39m     [38;5;66;03m# v1: collect interrupts from updates stream[39;00m
+[32m-> [39m[32m3913[39m [30;43m    [39;49m[30;43;01mfor[39;49;00m[30;43m [39;49m[30;43mchunk[39;49m[30;43m [39;49m[30;43;01min[39;49;00m[30;43m [39;49m[30;43mself[39;49m[30;43m.[39;49m[30;43mstream[39;49m[30;43m([39;49m
+[32m   3914[39m [30;43m        [39;49m[30;43minput[39;49m[30;43m,[39;49m
+[32m   3915[39m [30;43m        [39;49m[30;43mconfig[39;49m[30;43m,[39;49m
+[32m   3916[39m [30;43m        [39;49m[30;43mcontext[39;49m[30;43m=[39;49m[30;43mcontext[39;49m[30;43m,[39;49m
+[32m   3917[39m [30;43m        [39;49m[30;43mstream_mode[39;49m[30;43m=[39;49m[30;43m([39;49m
+[32m   3918[39m [30;43m            [39;49m[30;43m[[39;49m[30;43m"[39;49m[30;43mupdates[39;49m[30;43m"[39;49m[30;43m,[39;49m[30;43m [39;49m[30;43m"[39;49m[30;43mvalues[39;49m[30;43m"[39;49m[30;43m][39;49m[30;43m [39;49m[30;43;01mif[39;49;00m[30;43m [39;49m[30;43mstream_mode[39;49m[30;43m [39;49m[30;43m==[39;49m[30;43m [39;49m[30;43m"[39;49m[30;43mvalues[39;49m[30;43m"[39;49m[30;43m [39;49m[30;43;01melse[39;49;00m[30;43m [39;49m[30;43mstream_mode[39;49m
+[32m   3919[39m [30;43m        [39;49m[30;43m)[39;49m[30;43m,[39;49m
+[32m   3920[39m [30;43m        [39;49m[30;43mprint_mode[39;49m[30;43m=[39;49m[30;43mprint_mode[39;49m[30;43m,[39;49m
+[32m   3921[39m [30;43m        [39;49m[30;43moutput_keys[39;49m[30;43m=[39;49m[30;43moutput_keys[39;49m[30;43m,[39;49m
+[32m   3922[39m [30;43m        [39;49m[30;43minterrupt_before[39;49m[30;43m=[39;49m[30;43minterrupt_before[39;49m[30;43m,[39;49m
+[32m   3923[39m [30;43m        [39;49m[30;43minterrupt_after[39;49m[30;43m=[39;49m[30;43minterrupt_after[39;49m[30;43m,[39;49m
+[32m   3924[39m [30;43m        [39;49m[30;43mdurability[39;49m[30;43m=[39;49m[30;43mdurability[39;49m[30;43m,[39;49m
+[32m   3925[39m [30;43m        [39;49m[30;43mcontrol[39;49m[30;43m=[39;49m[30;43mcontrol[39;49m[30;43m,[39;49m
+[32m   3926[39m [30;43m        [39;49m[30;43m*[39;49m[30;43m*[39;49m[30;43mkwargs[39;49m[30;43m,[39;49m
+[32m   3927[39m [30;43m    [39;49m[30;43m)[39;49m[30;43m:[39;49m
+[32m   3928[39m [30;43m        [39;49m[30;43;01mif[39;49;00m[30;43m [39;49m[30;43mstream_mode[39;49m[30;43m [39;49m[30;43m==[39;49m[30;43m [39;49m[30;43m"[39;49m[30;43mvalues[39;49m[30;43m"[39;49m[30;43m:[39;49m
+[32m   3929[39m [30;43m            [39;49m[30;43;01mif[39;49;00m[30;43m [39;49m[30;43mlen[39;49m[30;43m([39;49m[30;43mchunk[39;49m[30;43m)[39;49m[30;43m [39;49m[30;43m==[39;49m[30;43m [39;49m[30;43m2[39;49m[30;43m:[39;49m
+
+[36mFile [39m[32m~\AppData\Local\Programs\Python\Python312\Lib\site-packages\langgraph\pregel\main.py:2967[39m, in [36mPregel.stream[39m[34m(self, input, config, context, stream_mode, print_mode, output_keys, interrupt_before, interrupt_after, durability, control, subgraphs, debug, version, **kwargs)[39m
+[32m   2965[39m [38;5;28;01mfor[39;00m task [38;5;129;01min[39;00m loop.match_cached_writes():
+[32m   2966[39m     loop.output_writes(task.id, task.writes, cached=[38;5;28;01mTrue[39;00m)
+[32m-> [39m[32m2967[39m [30;43m[39;49m[30;43;01mfor[39;49;00m[30;43m [39;49m[30;43m_[39;49m[30;43m [39;49m[30;43;01min[39;49;00m[30;43m [39;49m[30;43mrunner[39;49m[30;43m.[39;49m[30;43mtick[39;49m[30;43m([39;49m
+[32m   2968[39m [30;43m    [39;49m[30;43m[[39;49m[30;43mt[39;49m[30;43m [39;49m[30;43;01mfor[39;49;00m[30;43m [39;49m[30;43mt[39;49m[30;43m [39;49m[30;43;01min[39;49;00m[30;43m [39;49m[30;43mloop[39;49m[30;43m.[39;49m[30;43mtasks[39;49m[30;43m.[39;49m[30;43mvalues[39;49m[30;43m([39;49m[30;43m)[39;49m[30;43m [39;49m[30;43;01mif[39;49;00m[30;43m [39;49m[30;43;01mnot[39;49;00m[30;43m [39;49m[30;43mt[39;49m[30;43m.[39;49m[30;43mwrites[39;49m[30;43m][39;49m[30;43m,[39;49m
+[32m   2969[39m [30;43m    [39;49m[30;43mtimeout[39;49m[30;43m=[39;49m[30;43mself[39;49m[30;43m.[39;49m[30;43mstep_timeout[39;49m[30;43m,[39;49m
+[32m   2970[39m [30;43m    [39;49m[30;43mget_waiter[39;49m[30;43m=[39;49m[30;43mget_waiter[39;49m[30;43m,[39;49m
+[32m   2971[39m [30;43m    [39;49m[30;43mschedule_task[39;49m[30;43m=[39;49m[30;43mloop[39;49m[30;43m.[39;49m[30;43maccept_push[39;49m[30;43m,[39;49m
+[32m   2972[39m [30;43m[39;49m[30;43m)[39;49m[30;43m:[39;49m
+[32m   2973[39m [30;43m    [39;49m[30;43;03m# emit output[39;49;00m
+[32m   2974[39m [30;43m    [39;49m[30;43;01myield from[39;49;00m[30;43m [39;49m[30;43m_output[39;49m[30;43m([39;49m
+[32m   2975[39m [30;43m        [39;49m[30;43mstream_mode[39;49m[30;43m,[39;49m
+[32m   2976[39m [30;43m        [39;49m[30;43mprint_mode[39;49m[30;43m,[39;49m
+[32m   (...)[39m[32m   2982[39m [30;43m        [39;49m[30;43m_state_mapper[39;49m[30;43m,[39;49m
+[32m   2983[39m [30;43m    [39;49m[30;43m)[39;49m
+[32m   2984[39m loop.after_tick()
+
+[36mFile [39m[32m~\AppData\Local\Programs\Python\Python312\Lib\site-packages\langgraph\pregel\_runner.py:207[39m, in [36mPregelRunner.tick[39m[34m(self, tasks, reraise, timeout, retry_policy, get_waiter, schedule_task)[39m
+[32m    205[39m scheduled_error_handler = [38;5;28;01mFalse[39;00m
+[32m    206[39m [38;5;28;01mtry[39;00m:
+[32m--> [39m[32m207[39m     [30;43mrun_with_retry[39;49m[30;43m([39;49m
+[32m    208[39m [30;43m        [39;49m[30;43mt[39;49m[30;43m,[39;49m
+[32m    209[39m [30;43m        [39;49m[30;43mretry_policy[39;49m[30;43m,[39;49m
+[32m    210[39m [30;43m        [39;49m[30;43mconfigurable[39;49m[30;43m=[39;49m[30;43m{[39;49m
+[32m    211[39m [30;43m            [39;49m[30;43mCONFIG_KEY_CALL[39;49m[30;43m:[39;49m[30;43m [39;49m[30;43mpartial[39;49m[30;43m([39;49m
+[32m    212[39m [30;43m                [39;49m[30;43m_call[39;49m[30;43m,[39;49m
+[32m    213[39m [30;43m                [39;49m[30;43mweakref[39;49m[30;43m.[39;49m[30;43mref[39;49m[30;43m([39;49m[30;43mt[39;49m[30;43m)[39;49m[30;43m,[39;49m
+[32m    214[39m [30;43m                [39;49m[30;43mretry_policy[39;49m[30;43m=[39;49m[30;43mretry_policy[39;49m[30;43m,[39;49m
+[32m    215[39m [30;43m                [39;49m[30;43mfutures[39;49m[30;43m=[39;49m[30;43mweakref[39;49m[30;43m.[39;49m[30;43mref[39;49m[30;43m([39;49m[30;43mfutures[39;49m[30;43m)[39;49m[30;43m,[39;49m
+[32m    216[39m [30;43m                [39;49m[30;43mschedule_task[39;49m[30;43m=[39;49m[30;43mschedule_task[39;49m[30;43m,[39;49m
+[32m    217[39m [30;43m                [39;49m[30;43msubmit[39;49m[30;43m=[39;49m[30;43mself[39;49m[30;43m.[39;49m[30;43msubmit[39;49m[30;43m,[39;49m
+[32m    218[39m [30;43m            [39;49m[30;43m)[39;49m[30;43m,[39;49m
+[32m    219[39m [30;43m        [39;49m[30;43m}[39;49m[30;43m,[39;49m
+[32m    220[39m [30;43m    [39;49m[30;43m)[39;49m
+[32m    221[39m     [38;5;28mself[39m.commit(t, [38;5;28;01mNone[39;00m)
+[32m    222[39m [38;5;28;01mexcept[39;00m [38;5;167;01mException[39;00m [38;5;28;01mas[39;00m exc:
+
+[36mFile [39m[32m~\AppData\Local\Programs\Python\Python312\Lib\site-packages\langgraph\pregel\_retry.py:617[39m, in [36mrun_with_retry[39m[34m(task, retry_policy, configurable)[39m
+[32m    615[39m     task.writes.clear()
+[32m    616[39m     [38;5;66;03m# run the task[39;00m
+[32m--> [39m[32m617[39m     [38;5;28;01mreturn[39;00m [30;43mtask[39;49m[30;43m.[39;49m[30;43mproc[39;49m[30;43m.[39;49m[30;43minvoke[39;49m[30;43m([39;49m[30;43mtask[39;49m[30;43m.[39;49m[30;43minput[39;49m[30;43m,[39;49m[30;43m [39;49m[30;43mconfig[39;49m[30;43m)[39;49m
+[32m    618[39m [38;5;28;01mexcept[39;00m ParentCommand [38;5;28;01mas[39;00m exc:
+[32m    619[39m     ns: [38;5;28mstr[39m = config[CONF][CONFIG_KEY_CHECKPOINT_NS]
+
+[36mFile [39m[32m~\AppData\Local\Programs\Python\Python312\Lib\site-packages\langgraph\_internal\_runnable.py:707[39m, in [36mRunnableSeq.invoke[39m[34m(self, input, config, **kwargs)[39m
+[32m    705[39m     [38;5;66;03m# run in context[39;00m
+[32m    706[39m     [38;5;28;01mwith[39;00m set_config_context(config, run) [38;5;28;01mas[39;00m context:
+[32m--> [39m[32m707[39m         [38;5;28minput[39m = [30;43mcontext[39;49m[30;43m.[39;49m[30;43mrun[39;49m[30;43m([39;49m[30;43mstep[39;49m[30;43m.[39;49m[30;43minvoke[39;49m[30;43m,[39;49m[30;43m [39;49m[30;43minput[39;49m[30;43m,[39;49m[30;43m [39;49m[30;43mconfig[39;49m[30;43m,[39;49m[30;43m [39;49m[30;43m*[39;49m[30;43m*[39;49m[30;43mkwargs[39;49m[30;43m)[39;49m
+[32m    708[39m [38;5;28;01melse[39;00m:
+[32m    709[39m     [38;5;28minput[39m = step.invoke([38;5;28minput[39m, config)
+
+[36mFile [39m[32m~\AppData\Local\Programs\Python\Python312\Lib\site-packages\langgraph\_internal\_runnable.py:447[39m, in [36mRunnableCallable.invoke[39m[34m(self, input, config, **kwargs)[39m
+[32m    445[39m         run_manager.on_chain_end(ret)
+[32m    446[39m [38;5;28;01melse[39;00m:
+[32m--> [39m[32m447[39m     ret = [30;43mself[39;49m[30;43m.[39;49m[30;43mfunc[39;49m[30;43m([39;49m[30;43m*[39;49m[30;43margs[39;49m[30;43m,[39;49m[30;43m [39;49m[30;43m*[39;49m[30;43m*[39;49m[30;43mkwargs[39;49m[30;43m)[39;49m
+[32m    448[39m [38;5;28;01mif[39;00m [38;5;28mself[39m.recurse [38;5;129;01mand[39;00m [38;5;28misinstance[39m(ret, Runnable):
+[32m    449[39m     [38;5;28;01mreturn[39;00m ret.invoke([38;5;28minput[39m, config)
+
+[36mFile [39m[32m~\Documents\Assesment\task3_agentic\research_agents\agent.py:119[39m, in [36mbuild_agent.<locals>.agent_node[39m[34m(state)[39m
+[32m    117[39m     reply = plain.invoke(msgs)
+[32m    118[39m [38;5;28;01melse[39;00m:
+[32m--> [39m[32m119[39m     reply = [30;43minvoke_resilient[39;49m[30;43m([39;49m[30;43mmsgs[39;49m[30;43m)[39;49m
+[32m    120[39m [38;5;66;03m# Prefer visible content; fall back to the model's reasoning summary (gpt-oss).[39;00m
+[32m    121[39m reasoning = reply.additional_kwargs.get([33m"[39m[33mreasoning[39m[33m"[39m, [33m"[39m[33m"[39m)
+
+[36mFile [39m[32m~\Documents\Assesment\task3_agentic\research_agents\agent.py:100[39m, in [36mbuild_agent.<locals>.invoke_resilient[39m[34m(msgs)[39m
+[32m     98[39m [38;5;28;01mfor[39;00m attempt [38;5;129;01min[39;00m [38;5;28mrange[39m([32m1[39m + config.MALFORMED_TOOL_CALL_RETRIES):
+[32m     99[39m     [38;5;28;01mtry[39;00m:
+[32m--> [39m[32m100[39m         [38;5;28;01mreturn[39;00m [30;43mllm[39;49m[30;43m.[39;49m[30;43minvoke[39;49m[30;43m([39;49m[30;43mmsgs[39;49m[30;43m)[39;49m
+[32m    101[39m     [38;5;28;01mexcept[39;00m BadRequestError [38;5;28;01mas[39;00m exc:
+[32m    102[39m         [38;5;28;01mif[39;00m [33m"[39m[33mtool_use_failed[39m[33m"[39m [38;5;129;01mnot[39;00m [38;5;129;01min[39;00m [38;5;28mstr[39m(exc):
+
+[36mFile [39m[32m~\AppData\Local\Programs\Python\Python312\Lib\site-packages\langchain_core\runnables\fallbacks.py:212[39m, in [36mRunnableWithFallbacks.invoke[39m[34m(self, input, config, **kwargs)[39m
+[32m    210[39m     [38;5;28;01mraise[39;00m [38;5;167;01mValueError[39;00m(msg)
+[32m    211[39m run_manager.on_chain_error(first_error)
+[32m--> [39m[32m212[39m [38;5;28;01mraise[39;00m first_error
+
+[36mFile [39m[32m~\AppData\Local\Programs\Python\Python312\Lib\site-packages\langchain_core\runnables\fallbacks.py:192[39m, in [36mRunnableWithFallbacks.invoke[39m[34m(self, input, config, **kwargs)[39m
+[32m    190[39m     child_config = patch_config(config, callbacks=run_manager.get_child())
+[32m    191[39m     [38;5;28;01mwith[39;00m set_config_context(child_config) [38;5;28;01mas[39;00m context:
+[32m--> [39m[32m192[39m         output = [30;43mcontext[39;49m[30;43m.[39;49m[30;43mrun[39;49m[30;43m([39;49m
+[32m    193[39m [30;43m            [39;49m[30;43mrunnable[39;49m[30;43m.[39;49m[30;43minvoke[39;49m[30;43m,[39;49m
+[32m    194[39m [30;43m            [39;49m[30;43minput[39;49m[30;43m,[39;49m
+[32m    195[39m [30;43m            [39;49m[30;43mconfig[39;49m[30;43m,[39;49m
+[32m    196[39m [30;43m            [39;49m[30;43m*[39;49m[30;43m*[39;49m[30;43mkwargs[39;49m[30;43m,[39;49m
+[32m    197[39m [30;43m        [39;49m[30;43m)[39;49m
+[32m    198[39m [38;5;28;01mexcept[39;00m [38;5;28mself[39m.exceptions_to_handle [38;5;28;01mas[39;00m e:
+[32m    199[39m     [38;5;28;01mif[39;00m first_error [38;5;129;01mis[39;00m [38;5;28;01mNone[39;00m:
+
+[36mFile [39m[32m~\AppData\Local\Programs\Python\Python312\Lib\site-packages\langchain_core\runnables\base.py:6014[39m, in [36mRunnableBindingBase.invoke[39m[34m(self, input, config, **kwargs)[39m
+[32m   6007[39m [38;5;129m@override[39m
+[32m   6008[39m [38;5;28;01mdef[39;00m[38;5;250m [39m[34minvoke[39m(
+[32m   6009[39m     [38;5;28mself[39m,
+[32m   (...)[39m[32m   6012[39m     **kwargs: Any | [38;5;28;01mNone[39;00m,
+[32m   6013[39m ) -> Output:
+[32m-> [39m[32m6014[39m     [38;5;28;01mreturn[39;00m [30;43mself[39;49m[30;43m.[39;49m[30;43mbound[39;49m[30;43m.[39;49m[30;43minvoke[39;49m[30;43m([39;49m
+[32m   6015[39m [30;43m        [39;49m[30;43minput[39;49m[30;43m,[39;49m
+[32m   6016[39m [30;43m        [39;49m[30;43mself[39;49m[30;43m.[39;49m[30;43m_merge_configs[39;49m[30;43m([39;49m[30;43mconfig[39;49m[30;43m)[39;49m[30;43m,[39;49m
+[32m   6017[39m [30;43m        [39;49m[30;43m*[39;49m[30;43m*[39;49m[30;43m{[39;49m[30;43m*[39;49m[30;43m*[39;49m[30;43mself[39;49m[30;43m.[39;49m[30;43mkwargs[39;49m[30;43m,[39;49m[30;43m [39;49m[30;43m*[39;49m[30;43m*[39;49m[30;43mkwargs[39;49m[30;43m}[39;49m[30;43m,[39;49m
+[32m   6018[39m [30;43m    [39;49m[30;43m)[39;49m
+
+[36mFile [39m[32m~\AppData\Local\Programs\Python\Python312\Lib\site-packages\langchain_core\language_models\chat_models.py:488[39m, in [36mBaseChatModel.invoke[39m[34m(self, input, config, stop, **kwargs)[39m
+[32m    474[39m [38;5;129m@override[39m
+[32m    475[39m [38;5;28;01mdef[39;00m[38;5;250m [39m[34minvoke[39m(
+[32m    476[39m     [38;5;28mself[39m,
+[32m   (...)[39m[32m    481[39m     **kwargs: Any,
+[32m    482[39m ) -> AIMessage:
+[32m    483[39m     config = ensure_config(config)
+[32m    484[39m     [38;5;28;01mreturn[39;00m cast(
+[32m    485[39m         [33m"[39m[33mAIMessage[39m[33m"[39m,
+[32m    486[39m         cast(
+[32m    487[39m             [33m"[39m[33mChatGeneration[39m[33m"[39m,
+[32m--> [39m[32m488[39m             [30;43mself[39;49m[30;43m.[39;49m[30;43mgenerate_prompt[39;49m[30;43m([39;49m
+[32m    489[39m [30;43m                [39;49m[30;43m[[39;49m[30;43mself[39;49m[30;43m.[39;49m[30;43m_convert_input[39;49m[30;43m([39;49m[30;43minput[39;49m[30;43m)[39;49m[30;43m][39;49m[30;43m,[39;49m
+[32m    490[39m [30;43m                [39;49m[30;43mstop[39;49m[30;43m=[39;49m[30;43mstop[39;49m[30;43m,[39;49m
+[32m    491[39m [30;43m                [39;49m[30;43mcallbacks[39;49m[30;43m=[39;49m[30;43mconfig[39;49m[30;43m.[39;49m[30;43mget[39;49m[30;43m([39;49m[30;43m"[39;49m[30;43mcallbacks[39;49m[30;43m"[39;49m[30;43m)[39;49m[30;43m,[39;49m
+[32m    492[39m [30;43m                [39;49m[30;43mtags[39;49m[30;43m=[39;49m[30;43mconfig[39;49m[30;43m.[39;49m[30;43mget[39;49m[30;43m([39;49m[30;43m"[39;49m[30;43mtags[39;49m[30;43m"[39;49m[30;43m)[39;49m[30;43m,[39;49m
+[32m    493[39m [30;43m                [39;49m[30;43mmetadata[39;49m[30;43m=[39;49m[30;43mconfig[39;49m[30;43m.[39;49m[30;43mget[39;49m[30;43m([39;49m[30;43m"[39;49m[30;43mmetadata[39;49m[30;43m"[39;49m[30;43m)[39;49m[30;43m,[39;49m
+[32m    494[39m [30;43m                [39;49m[30;43mrun_name[39;49m[30;43m=[39;49m[30;43mconfig[39;49m[30;43m.[39;49m[30;43mget[39;49m[30;43m([39;49m[30;43m"[39;49m[30;43mrun_name[39;49m[30;43m"[39;49m[30;43m)[39;49m[30;43m,[39;49m
+[32m    495[39m [30;43m                [39;49m[30;43mrun_id[39;49m[30;43m=[39;49m[30;43mconfig[39;49m[30;43m.[39;49m[30;43mpop[39;49m[30;43m([39;49m[30;43m"[39;49m[30;43mrun_id[39;49m[30;43m"[39;49m[30;43m,[39;49m[30;43m [39;49m[30;43;01mNone[39;49;00m[30;43m)[39;49m[30;43m,[39;49m
+[32m    496[39m [30;43m                [39;49m[30;43m*[39;49m[30;43m*[39;49m[30;43mkwargs[39;49m[30;43m,[39;49m
+[32m    497[39m [30;43m            [39;49m[30;43m)[39;49m.generations[[32m0[39m][[32m0[39m],
+[32m    498[39m         ).message,
+[32m    499[39m     )
+
+[36mFile [39m[32m~\AppData\Local\Programs\Python\Python312\Lib\site-packages\langchain_core\language_models\chat_models.py:1877[39m, in [36mBaseChatModel.generate_prompt[39m[34m(self, prompts, stop, callbacks, **kwargs)[39m
+[32m   1868[39m [38;5;129m@override[39m
+[32m   1869[39m [38;5;28;01mdef[39;00m[38;5;250m [39m[34mgenerate_prompt[39m(
+[32m   1870[39m     [38;5;28mself[39m,
+[32m   (...)[39m[32m   1874[39m     **kwargs: Any,
+[32m   1875[39m ) -> LLMResult:
+[32m   1876[39m     prompt_messages = [p.to_messages() [38;5;28;01mfor[39;00m p [38;5;129;01min[39;00m prompts]
+[32m-> [39m[32m1877[39m     [38;5;28;01mreturn[39;00m [30;43mself[39;49m[30;43m.[39;49m[30;43mgenerate[39;49m[30;43m([39;49m[30;43mprompt_messages[39;49m[30;43m,[39;49m[30;43m [39;49m[30;43mstop[39;49m[30;43m=[39;49m[30;43mstop[39;49m[30;43m,[39;49m[30;43m [39;49m[30;43mcallbacks[39;49m[30;43m=[39;49m[30;43mcallbacks[39;49m[30;43m,[39;49m[30;43m [39;49m[30;43m*[39;49m[30;43m*[39;49m[30;43mkwargs[39;49m[30;43m)[39;49m
+
+[36mFile [39m[32m~\AppData\Local\Programs\Python\Python312\Lib\site-packages\langchain_core\language_models\chat_models.py:1684[39m, in [36mBaseChatModel.generate[39m[34m(self, messages, stop, callbacks, tags, metadata, run_name, run_id, **kwargs)[39m
+[32m   1681[39m [38;5;28;01mfor[39;00m i, m [38;5;129;01min[39;00m [38;5;28menumerate[39m(input_messages):
+[32m   1682[39m     [38;5;28;01mtry[39;00m:
+[32m   1683[39m         results.append(
+[32m-> [39m[32m1684[39m             [30;43mself[39;49m[30;43m.[39;49m[30;43m_generate_with_cache[39;49m[30;43m([39;49m
+[32m   1685[39m [30;43m                [39;49m[30;43mm[39;49m[30;43m,[39;49m
+[32m   1686[39m [30;43m                [39;49m[30;43mstop[39;49m[30;43m=[39;49m[30;43mstop[39;49m[30;43m,[39;49m
+[32m   1687[39m [30;43m                [39;49m[30;43mrun_manager[39;49m[30;43m=[39;49m[30;43mrun_managers[39;49m[30;43m[[39;49m[30;43mi[39;49m[30;43m][39;49m[30;43m [39;49m[30;43;01mif[39;49;00m[30;43m [39;49m[30;43mrun_managers[39;49m[30;43m [39;49m[30;43;01melse[39;49;00m[30;43m [39;49m[30;43;01mNone[39;49;00m[30;43m,[39;49m
+[32m   1688[39m [30;43m                [39;49m[30;43m*[39;49m[30;43m*[39;49m[30;43mkwargs[39;49m[30;43m,[39;49m
+[32m   1689[39m [30;43m            [39;49m[30;43m)[39;49m
+[32m   1690[39m         )
+[32m   1691[39m     [38;5;28;01mexcept[39;00m [38;5;167;01mBaseException[39;00m [38;5;28;01mas[39;00m e:
+[32m   1692[39m         [38;5;28;01mif[39;00m run_managers:
+
+[36mFile [39m[32m~\AppData\Local\Programs\Python\Python312\Lib\site-packages\langchain_core\language_models\chat_models.py:2022[39m, in [36mBaseChatModel._generate_with_cache[39m[34m(self, messages, stop, run_manager, **kwargs)[39m
+[32m   2020[39m     result = generate_from_stream([38;5;28miter[39m(chunks))
+[32m   2021[39m [38;5;28;01melif[39;00m inspect.signature([38;5;28mself[39m._generate).parameters.get([33m"[39m[33mrun_manager[39m[33m"[39m):
+[32m-> [39m[32m2022[39m     result = [30;43mself[39;49m[30;43m.[39;49m[30;43m_generate[39;49m[30;43m([39;49m
+[32m   2023[39m [30;43m        [39;49m[30;43mmessages[39;49m[30;43m,[39;49m[30;43m [39;49m[30;43mstop[39;49m[30;43m=[39;49m[30;43mstop[39;49m[30;43m,[39;49m[30;43m [39;49m[30;43mrun_manager[39;49m[30;43m=[39;49m[30;43mrun_manager[39;49m[30;43m,[39;49m[30;43m [39;49m[30;43m*[39;49m[30;43m*[39;49m[30;43mkwargs[39;49m
+[32m   2024[39m [30;43m    [39;49m[30;43m)[39;49m
+[32m   2025[39m [38;5;28;01melse[39;00m:
+[32m   2026[39m     result = [38;5;28mself[39m._generate(messages, stop=stop, **kwargs)
+
+[36mFile [39m[32m~\AppData\Local\Programs\Python\Python312\Lib\site-packages\langchain_openai\chat_models\base.py:1909[39m, in [36mBaseChatOpenAI._generate[39m[34m(self, messages, stop, run_manager, **kwargs)[39m
+[32m   1907[39m     _handle_openai_bad_request(e)
+[32m   1908[39m [38;5;28;01mexcept[39;00m openai.APIError [38;5;28;01mas[39;00m e:
+[32m-> [39m[32m1909[39m     [30;43m_handle_openai_api_error[39;49m[30;43m([39;49m[30;43me[39;49m[30;43m)[39;49m
+[32m   1910[39m [38;5;28;01mexcept[39;00m [38;5;167;01mException[39;00m [38;5;28;01mas[39;00m e:
+[32m   1911[39m     [38;5;28;01mif[39;00m raw_response [38;5;129;01mis[39;00m [38;5;129;01mnot[39;00m [38;5;28;01mNone[39;00m [38;5;129;01mand[39;00m [38;5;28mhasattr[39m(raw_response, [33m"[39m[33mhttp_response[39m[33m"[39m):
+
+[36mFile [39m[32m~\AppData\Local\Programs\Python\Python312\Lib\site-packages\langchain_openai\chat_models\base.py:668[39m, in [36m_handle_openai_api_error[39m[34m(e)[39m
+[32m    664[39m     [38;5;28;01mraise[39;00m OpenAIModelNotFoundError(
+[32m    665[39m         message=e.message, response=e.response, body=e.body
+[32m    666[39m     ) [38;5;28;01mfrom[39;00m[38;5;250m [39m[34;01me[39;00m
+[32m    667[39m [38;5;28;01mif[39;00m [38;5;28misinstance[39m(e, openai.RateLimitError):
+[32m--> [39m[32m668[39m     [38;5;28;01mraise[39;00m OpenAIRateLimitError(
+[32m    669[39m         message=e.message, response=e.response, body=e.body
+[32m    670[39m     ) [38;5;28;01mfrom[39;00m[38;5;250m [39m[34;01me[39;00m
+[32m    671[39m [38;5;28;01mif[39;00m [38;5;28misinstance[39m(e, openai.InternalServerError):
+[32m    672[39m     [38;5;28;01mraise[39;00m OpenAIAPIError(message=e.message, response=e.response, body=e.body) [38;5;28;01mfrom[39;00m[38;5;250m [39m[34;01me[39;00m
+
+[31mOpenAIRateLimitError[39m: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01m4a9k53ye54t1y5yq4m4rw1j` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 198899, Requested 1549. Please try again in 3m13.535999999s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+During task with name 'agent' and id '28c1823a-1dc8-131c-1ba3-cf3c27fd008d'
+

@@ -1,0 +1,16 @@
+# Colab T4 (CUDA) environment
+torch
+transformers>=4.46
+peft>=0.13
+trl>=0.20
+bitsandbytes>=0.43
+accelerate>=0.34
+datasets>=3.0
+rouge_score>=0.1.2
+bert_score>=0.3.13
+chromadb>=0.5
+openai>=1.40
+pydantic>=2.6
+matplotlib>=3.8
+pandas>=2.0
+python-dotenv>=1.0

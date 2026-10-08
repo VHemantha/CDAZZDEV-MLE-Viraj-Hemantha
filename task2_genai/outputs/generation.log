@@ -1,0 +1,876 @@
+08:03:57 INFO 0/150 cases present, 150 to generate
+08:04:07 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+08:04:07 INFO seed 1 rejected (attempt 1): ungrounded figure: '250,000'
+08:04:07 INFO progress: 148 remaining
+08:04:08 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+08:04:08 INFO Retrying request in 9.000000 seconds (retry 1 of 6)
+08:04:17 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+08:04:17 INFO Retrying request in 1.000000 seconds (retry 2 of 6)
+08:04:30 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+08:04:30 INFO seed 4 rejected (attempt 1): ungrounded figure: '260,000'; ungrounded figure: '120,000'
+08:04:30 INFO progress: 146 remaining
+08:04:30 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+08:04:30 INFO Retrying request in 36.000000 seconds (retry 1 of 6)
+08:05:18 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+08:05:18 INFO seed 8 rejected (attempt 1): ungrounded figure: '12,500'
+08:05:18 INFO progress: 144 remaining
+08:05:18 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+08:05:18 INFO Retrying request in 48.000000 seconds (retry 1 of 6)
+08:06:24 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+08:06:24 INFO seed 9 rejected (attempt 1): ungrounded figure: '25,000.00'
+08:06:24 INFO progress: 142 remaining
+08:06:25 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+08:06:25 INFO Retrying request in 29.000000 seconds (retry 1 of 6)
+08:07:04 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+08:07:04 INFO seed 14 rejected (attempt 1): ungrounded figure: '78,450'
+08:07:04 INFO progress: 140 remaining
+08:07:04 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+08:07:04 INFO Retrying request in 30.000000 seconds (retry 1 of 6)
+08:07:45 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+08:07:45 INFO seed 15 rejected (attempt 1): ungrounded figure: '76,600'
+08:07:45 INFO seed 17 rejected (attempt 1): ungrounded figure: '30,000'
+08:07:45 INFO progress: 139 remaining
+08:07:46 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+08:07:46 INFO Retrying request in 32.000000 seconds (retry 1 of 6)
+08:08:28 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+08:08:28 INFO progress: 136 remaining
+08:08:28 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+08:08:28 INFO Retrying request in 27.000000 seconds (retry 1 of 6)
+08:09:06 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+08:09:06 INFO progress: 133 remaining
+08:09:06 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+08:09:06 INFO Retrying request in 18.000000 seconds (retry 1 of 6)
+08:09:27 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+08:09:27 INFO Retrying request in 8.000000 seconds (retry 2 of 6)
+08:09:50 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+08:09:50 INFO progress: 130 remaining
+08:09:50 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+08:09:50 INFO Retrying request in 23.000000 seconds (retry 1 of 6)
+08:10:23 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+08:10:23 INFO progress: 127 remaining
+08:10:23 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+08:10:23 INFO Retrying request in 24.000000 seconds (retry 1 of 6)
+08:10:59 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+08:10:59 INFO progress: 124 remaining
+08:11:01 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+08:11:01 INFO Retrying request in 25.000000 seconds (retry 1 of 6)
+08:11:28 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+08:11:28 INFO Retrying request in 8.000000 seconds (retry 2 of 6)
+08:11:47 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+08:11:47 INFO seed 35 rejected (attempt 1): ungrounded figure: '40,800'
+08:11:47 INFO progress: 122 remaining
+08:11:47 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+08:11:47 INFO Retrying request in 26.000000 seconds (retry 1 of 6)
+08:12:13 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+08:12:13 INFO Retrying request in 1.000000 seconds (retry 2 of 6)
+08:12:23 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+08:12:23 INFO seed 37 rejected (attempt 1): ungrounded figure: '100,000'
+08:12:23 INFO progress: 120 remaining
+08:12:23 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+08:12:23 INFO Retrying request in 31.000000 seconds (retry 1 of 6)
+08:13:05 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+08:13:05 INFO progress: 117 remaining
+08:13:05 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+08:13:05 INFO Retrying request in 28.000000 seconds (retry 1 of 6)
+08:13:44 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+08:13:44 INFO seed 43 rejected (attempt 1): ungrounded figure: '44,800'; ungrounded figure: '27,000'
+08:13:44 INFO progress: 115 remaining
+08:13:44 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+08:13:44 INFO Retrying request in 30.000000 seconds (retry 1 of 6)
+08:14:25 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+08:14:25 INFO progress: 112 remaining
+08:14:25 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+08:14:25 INFO Retrying request in 31.000000 seconds (retry 1 of 6)
+08:14:57 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+08:14:57 INFO Retrying request in 1.000000 seconds (retry 2 of 6)
+08:15:05 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+08:15:05 INFO progress: 109 remaining
+08:15:05 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+08:15:05 INFO Retrying request in 25.000000 seconds (retry 1 of 6)
+08:15:43 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+08:15:43 INFO seed 51 rejected (attempt 1): ungrounded figure: '50,000'; ungrounded figure: '115,000.00'
+08:15:43 INFO progress: 107 remaining
+08:15:44 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+08:15:44 INFO Retrying request in 32.000000 seconds (retry 1 of 6)
+08:16:16 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+08:16:16 INFO Retrying request in 1.000000 seconds (retry 2 of 6)
+08:16:35 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+08:16:35 INFO seed 54 rejected (attempt 1): ungrounded figure: '66,000.00'
+08:16:35 INFO seed 56 rejected (attempt 1): ungrounded figure: '24,000.00'
+08:16:35 INFO progress: 106 remaining
+08:16:36 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+08:16:36 INFO Retrying request in 26.000000 seconds (retry 1 of 6)
+08:17:16 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+08:17:16 INFO progress: 103 remaining
+08:17:17 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+08:17:17 INFO Retrying request in 34.000000 seconds (retry 1 of 6)
+08:18:01 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+08:18:01 INFO progress: 100 remaining
+08:18:01 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+08:18:01 INFO Retrying request in 28.000000 seconds (retry 1 of 6)
+08:18:40 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+08:18:40 INFO progress: 97 remaining
+08:18:40 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+08:18:40 INFO Retrying request in 38.000000 seconds (retry 1 of 6)
+08:19:28 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+08:19:28 INFO progress: 94 remaining
+08:19:28 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+08:19:28 INFO Retrying request in 27.000000 seconds (retry 1 of 6)
+08:19:56 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+08:19:56 INFO Retrying request in 2.000000 seconds (retry 2 of 6)
+08:20:07 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+08:20:07 INFO progress: 91 remaining
+08:20:07 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+08:20:07 INFO Retrying request in 30.000000 seconds (retry 1 of 6)
+08:20:50 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+08:20:50 INFO progress: 88 remaining
+08:20:51 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+08:20:51 INFO Retrying request in 21.000000 seconds (retry 1 of 6)
+08:21:22 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+08:21:22 INFO progress: 85 remaining
+08:21:22 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+08:21:22 INFO Retrying request in 31.000000 seconds (retry 1 of 6)
+08:22:10 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+08:22:10 INFO progress: 82 remaining
+08:22:11 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+08:22:11 INFO Retrying request in 32.000000 seconds (retry 1 of 6)
+08:22:52 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+08:22:52 INFO progress: 79 remaining
+08:22:52 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+08:22:52 INFO Retrying request in 31.000000 seconds (retry 1 of 6)
+08:23:32 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+08:23:32 INFO seed 86 rejected (attempt 1): ungrounded figure: '277,500.00'
+08:23:32 INFO progress: 77 remaining
+08:23:32 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+08:23:32 INFO Retrying request in 15.000000 seconds (retry 1 of 6)
+08:23:48 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+08:23:48 INFO Retrying request in 1.000000 seconds (retry 2 of 6)
+08:24:02 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+08:24:02 INFO progress: 74 remaining
+08:24:02 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+08:24:02 WARNING teacher groq/gpt-oss-120b exhausted; rotating
+08:24:03 INFO HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 404 Not Found"
+08:24:03 WARNING batch [90, 91, 92] failed on openrouter/gpt-oss-120b: Error code: 404 - {'error': {'message': 'This model is unavailable for free. The paid version is available now - use this slug instead: openai/gpt-oss-120b', 'code': 404}, 'user_id': 'user_3KLqOajoEHK
+08:24:08 INFO seed 90 rejected (attempt 1): missing from teacher output
+08:24:08 INFO seed 91 rejected (attempt 1): missing from teacher output
+08:24:08 INFO seed 92 rejected (attempt 1): missing from teacher output
+08:24:08 INFO progress: 74 remaining
+08:24:09 INFO HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 404 Not Found"
+08:24:09 WARNING batch [93, 94, 95] failed on openrouter/gpt-oss-120b: Error code: 404 - {'error': {'message': 'This model is unavailable for free. The paid version is available now - use this slug instead: openai/gpt-oss-120b', 'code': 404}, 'user_id': 'user_3KLqOajoEHK
+08:24:14 INFO seed 93 rejected (attempt 1): missing from teacher output
+08:24:14 INFO seed 94 rejected (attempt 1): missing from teacher output
+08:24:14 INFO seed 95 rejected (attempt 1): missing from teacher output
+08:24:14 INFO progress: 74 remaining
+08:24:14 INFO HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 404 Not Found"
+08:24:14 WARNING batch [96, 97, 98] failed on openrouter/gpt-oss-120b: Error code: 404 - {'error': {'message': 'This model is unavailable for free. The paid version is available now - use this slug instead: openai/gpt-oss-120b', 'code': 404}, 'user_id': 'user_3KLqOajoEHK
+08:24:19 INFO seed 96 rejected (attempt 1): missing from teacher output
+08:24:19 INFO seed 97 rejected (attempt 1): missing from teacher output
+08:24:19 INFO seed 98 rejected (attempt 1): missing from teacher output
+08:24:19 INFO progress: 74 remaining
+08:24:19 INFO HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 404 Not Found"
+08:24:19 WARNING batch [99, 100, 101] failed on openrouter/gpt-oss-120b: Error code: 404 - {'error': {'message': 'This model is unavailable for free. The paid version is available now - use this slug instead: openai/gpt-oss-120b', 'code': 404}, 'user_id': 'user_3KLqOajoEHK
+08:24:24 INFO seed 99 rejected (attempt 1): missing from teacher output
+08:24:24 INFO seed 100 rejected (attempt 1): missing from teacher output
+08:24:24 INFO seed 101 rejected (attempt 1): missing from teacher output
+08:24:24 INFO progress: 74 remaining
+08:24:24 INFO HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 404 Not Found"
+08:24:24 WARNING batch [102, 103, 104] failed on openrouter/gpt-oss-120b: Error code: 404 - {'error': {'message': 'This model is unavailable for free. The paid version is available now - use this slug instead: openai/gpt-oss-120b', 'code': 404}, 'user_id': 'user_3KLqOajoEHK
+08:24:29 INFO seed 102 rejected (attempt 1): missing from teacher output
+08:24:29 INFO seed 103 rejected (attempt 1): missing from teacher output
+08:24:29 INFO seed 104 rejected (attempt 1): missing from teacher output
+08:24:29 INFO progress: 74 remaining
+08:24:30 INFO HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 404 Not Found"
+08:24:30 WARNING batch [105, 106, 107] failed on openrouter/gpt-oss-120b: Error code: 404 - {'error': {'message': 'This model is unavailable for free. The paid version is available now - use this slug instead: openai/gpt-oss-120b', 'code': 404}, 'user_id': 'user_3KLqOajoEHK
+08:24:35 INFO seed 105 rejected (attempt 1): missing from teacher output
+08:24:35 INFO seed 106 rejected (attempt 1): missing from teacher output
+08:24:35 INFO seed 107 rejected (attempt 1): missing from teacher output
+08:24:35 INFO progress: 74 remaining
+08:24:36 INFO HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 404 Not Found"
+08:24:36 WARNING batch [108, 109, 110] failed on openrouter/gpt-oss-120b: Error code: 404 - {'error': {'message': 'This model is unavailable for free. The paid version is available now - use this slug instead: openai/gpt-oss-120b', 'code': 404}, 'user_id': 'user_3KLqOajoEHK
+08:24:41 INFO seed 108 rejected (attempt 1): missing from teacher output
+08:24:41 INFO seed 109 rejected (attempt 1): missing from teacher output
+08:24:41 INFO seed 110 rejected (attempt 1): missing from teacher output
+08:24:41 INFO progress: 74 remaining
+08:24:43 INFO HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 404 Not Found"
+08:24:43 WARNING batch [111, 112, 113] failed on openrouter/gpt-oss-120b: Error code: 404 - {'error': {'message': 'This model is unavailable for free. The paid version is available now - use this slug instead: openai/gpt-oss-120b', 'code': 404}, 'user_id': 'user_3KLqOajoEHK
+08:24:48 INFO seed 111 rejected (attempt 1): missing from teacher output
+08:24:48 INFO seed 112 rejected (attempt 1): missing from teacher output
+08:24:48 INFO seed 113 rejected (attempt 1): missing from teacher output
+08:24:48 INFO progress: 74 remaining
+08:24:48 INFO HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 404 Not Found"
+08:24:48 WARNING batch [114, 115, 116] failed on openrouter/gpt-oss-120b: Error code: 404 - {'error': {'message': 'This model is unavailable for free. The paid version is available now - use this slug instead: openai/gpt-oss-120b', 'code': 404}, 'user_id': 'user_3KLqOajoEHK
+08:24:53 INFO seed 114 rejected (attempt 1): missing from teacher output
+08:24:53 INFO seed 115 rejected (attempt 1): missing from teacher output
+08:24:53 INFO seed 116 rejected (attempt 1): missing from teacher output
+08:24:53 INFO progress: 74 remaining
+08:24:53 INFO HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 404 Not Found"
+08:24:53 WARNING batch [117, 118, 119] failed on openrouter/gpt-oss-120b: Error code: 404 - {'error': {'message': 'This model is unavailable for free. The paid version is available now - use this slug instead: openai/gpt-oss-120b', 'code': 404}, 'user_id': 'user_3KLqOajoEHK
+08:24:58 INFO seed 117 rejected (attempt 1): missing from teacher output
+08:24:58 INFO seed 118 rejected (attempt 1): missing from teacher output
+08:24:58 INFO seed 119 rejected (attempt 1): missing from teacher output
+08:24:58 INFO progress: 74 remaining
+08:24:59 INFO HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 404 Not Found"
+08:24:59 WARNING batch [120, 121, 122] failed on openrouter/gpt-oss-120b: Error code: 404 - {'error': {'message': 'This model is unavailable for free. The paid version is available now - use this slug instead: openai/gpt-oss-120b', 'code': 404}, 'user_id': 'user_3KLqOajoEHK
+08:25:04 INFO seed 120 rejected (attempt 1): missing from teacher output
+08:25:04 INFO seed 121 rejected (attempt 1): missing from teacher output
+08:25:04 INFO seed 122 rejected (attempt 1): missing from teacher output
+08:25:04 INFO progress: 74 remaining
+08:25:06 INFO HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 404 Not Found"
+08:25:06 WARNING batch [123, 124, 125] failed on openrouter/gpt-oss-120b: Error code: 404 - {'error': {'message': 'This model is unavailable for free. The paid version is available now - use this slug instead: openai/gpt-oss-120b', 'code': 404}, 'user_id': 'user_3KLqOajoEHK
+08:25:11 INFO seed 123 rejected (attempt 1): missing from teacher output
+08:25:11 INFO seed 124 rejected (attempt 1): missing from teacher output
+08:25:11 INFO seed 125 rejected (attempt 1): missing from teacher output
+08:25:11 INFO progress: 74 remaining
+08:25:11 INFO HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 404 Not Found"
+08:25:12 WARNING batch [126, 127, 128] failed on openrouter/gpt-oss-120b: Error code: 404 - {'error': {'message': 'This model is unavailable for free. The paid version is available now - use this slug instead: openai/gpt-oss-120b', 'code': 404}, 'user_id': 'user_3KLqOajoEHK
+08:25:17 INFO seed 126 rejected (attempt 1): missing from teacher output
+08:25:17 INFO seed 127 rejected (attempt 1): missing from teacher output
+08:25:17 INFO seed 128 rejected (attempt 1): missing from teacher output
+08:25:17 INFO progress: 74 remaining
+08:25:19 INFO HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 404 Not Found"
+08:25:19 WARNING batch [129, 130, 131] failed on openrouter/gpt-oss-120b: Error code: 404 - {'error': {'message': 'This model is unavailable for free. The paid version is available now - use this slug instead: openai/gpt-oss-120b', 'code': 404}, 'user_id': 'user_3KLqOajoEHK
+08:25:24 INFO seed 129 rejected (attempt 1): missing from teacher output
+08:25:24 INFO seed 130 rejected (attempt 1): missing from teacher output
+08:25:24 INFO seed 131 rejected (attempt 1): missing from teacher output
+08:25:24 INFO progress: 74 remaining
+08:25:24 INFO HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 404 Not Found"
+08:25:24 WARNING batch [132, 133, 134] failed on openrouter/gpt-oss-120b: Error code: 404 - {'error': {'message': 'This model is unavailable for free. The paid version is available now - use this slug instead: openai/gpt-oss-120b', 'code': 404}, 'user_id': 'user_3KLqOajoEHK
+08:25:29 INFO seed 132 rejected (attempt 1): missing from teacher output
+08:25:29 INFO seed 133 rejected (attempt 1): missing from teacher output
+08:25:29 INFO seed 134 rejected (attempt 1): missing from teacher output
+08:25:29 INFO progress: 74 remaining
+08:25:30 INFO HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 404 Not Found"
+08:25:30 WARNING batch [135, 136, 137] failed on openrouter/gpt-oss-120b: Error code: 404 - {'error': {'message': 'This model is unavailable for free. The paid version is available now - use this slug instead: openai/gpt-oss-120b', 'code': 404}, 'user_id': 'user_3KLqOajoEHK
+08:25:35 INFO seed 135 rejected (attempt 1): missing from teacher output
+08:25:35 INFO seed 136 rejected (attempt 1): missing from teacher output
+08:25:35 INFO seed 137 rejected (attempt 1): missing from teacher output
+08:25:35 INFO progress: 74 remaining
+08:25:35 INFO HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 404 Not Found"
+08:25:35 WARNING batch [138, 139, 140] failed on openrouter/gpt-oss-120b: Error code: 404 - {'error': {'message': 'This model is unavailable for free. The paid version is available now - use this slug instead: openai/gpt-oss-120b', 'code': 404}, 'user_id': 'user_3KLqOajoEHK
+08:25:40 INFO seed 138 rejected (attempt 1): missing from teacher output
+08:25:40 INFO seed 139 rejected (attempt 1): missing from teacher output
+08:25:40 INFO seed 140 rejected (attempt 1): missing from teacher output
+08:25:40 INFO progress: 74 remaining
+08:25:40 INFO HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 404 Not Found"
+08:25:40 WARNING batch [141, 142, 143] failed on openrouter/gpt-oss-120b: Error code: 404 - {'error': {'message': 'This model is unavailable for free. The paid version is available now - use this slug instead: openai/gpt-oss-120b', 'code': 404}, 'user_id': 'user_3KLqOajoEHK
+08:25:45 INFO seed 141 rejected (attempt 1): missing from teacher output
+08:25:45 INFO seed 142 rejected (attempt 1): missing from teacher output
+08:25:45 INFO seed 143 rejected (attempt 1): missing from teacher output
+08:25:45 INFO progress: 74 remaining
+08:25:46 INFO HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 404 Not Found"
+08:25:46 WARNING batch [144, 145, 146] failed on openrouter/gpt-oss-120b: Error code: 404 - {'error': {'message': 'This model is unavailable for free. The paid version is available now - use this slug instead: openai/gpt-oss-120b', 'code': 404}, 'user_id': 'user_3KLqOajoEHK
+08:25:51 INFO seed 144 rejected (attempt 1): missing from teacher output
+08:25:51 INFO seed 145 rejected (attempt 1): missing from teacher output
+08:25:51 INFO seed 146 rejected (attempt 1): missing from teacher output
+08:25:51 INFO progress: 74 remaining
+08:25:51 INFO HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 404 Not Found"
+08:25:51 WARNING batch [147, 148, 149] failed on openrouter/gpt-oss-120b: Error code: 404 - {'error': {'message': 'This model is unavailable for free. The paid version is available now - use this slug instead: openai/gpt-oss-120b', 'code': 404}, 'user_id': 'user_3KLqOajoEHK
+08:25:56 INFO seed 147 rejected (attempt 1): missing from teacher output
+08:25:56 INFO seed 148 rejected (attempt 1): missing from teacher output
+08:25:56 INFO seed 149 rejected (attempt 1): missing from teacher output
+08:25:56 INFO progress: 74 remaining
+08:25:56 INFO HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 404 Not Found"
+08:25:56 WARNING batch [1, 4, 8] failed on openrouter/gpt-oss-120b: Error code: 404 - {'error': {'message': 'This model is unavailable for free. The paid version is available now - use this slug instead: openai/gpt-oss-120b', 'code': 404}, 'user_id': 'user_3KLqOajoEHK
+08:26:01 INFO seed 1 rejected (attempt 2): missing from teacher output
+08:26:01 INFO seed 4 rejected (attempt 2): missing from teacher output
+08:26:01 INFO seed 8 rejected (attempt 2): missing from teacher output
+08:26:01 INFO progress: 74 remaining
+08:26:02 INFO HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 404 Not Found"
+08:26:02 WARNING batch [9, 14, 15] failed on openrouter/gpt-oss-120b: Error code: 404 - {'error': {'message': 'This model is unavailable for free. The paid version is available now - use this slug instead: openai/gpt-oss-120b', 'code': 404}, 'user_id': 'user_3KLqOajoEHK
+08:26:07 INFO seed 9 rejected (attempt 2): missing from teacher output
+08:26:07 INFO seed 14 rejected (attempt 2): missing from teacher output
+08:26:07 INFO seed 15 rejected (attempt 2): missing from teacher output
+08:26:07 INFO progress: 74 remaining
+08:26:07 INFO HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 404 Not Found"
+08:26:07 WARNING batch [17, 35, 37] failed on openrouter/gpt-oss-120b: Error code: 404 - {'error': {'message': 'This model is unavailable for free. The paid version is available now - use this slug instead: openai/gpt-oss-120b', 'code': 404}, 'user_id': 'user_3KLqOajoEHK
+08:26:12 INFO seed 17 rejected (attempt 2): missing from teacher output
+08:26:12 INFO seed 35 rejected (attempt 2): missing from teacher output
+08:26:12 INFO seed 37 rejected (attempt 2): missing from teacher output
+08:26:12 INFO progress: 74 remaining
+08:26:12 INFO HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 404 Not Found"
+08:26:12 WARNING batch [43, 51, 54] failed on openrouter/gpt-oss-120b: Error code: 404 - {'error': {'message': 'This model is unavailable for free. The paid version is available now - use this slug instead: openai/gpt-oss-120b', 'code': 404}, 'user_id': 'user_3KLqOajoEHK
+08:26:17 INFO seed 43 rejected (attempt 2): missing from teacher output
+08:26:17 INFO seed 51 rejected (attempt 2): missing from teacher output
+08:26:17 INFO seed 54 rejected (attempt 2): missing from teacher output
+08:26:17 INFO progress: 74 remaining
+08:26:18 INFO HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 404 Not Found"
+08:26:18 WARNING batch [56, 86, 90] failed on openrouter/gpt-oss-120b: Error code: 404 - {'error': {'message': 'This model is unavailable for free. The paid version is available now - use this slug instead: openai/gpt-oss-120b', 'code': 404}, 'user_id': 'user_3KLqOajoEHK
+08:26:23 INFO seed 56 rejected (attempt 2): missing from teacher output
+08:26:23 INFO seed 86 rejected (attempt 2): missing from teacher output
+08:26:23 INFO seed 90 rejected (attempt 2): missing from teacher output
+08:26:23 INFO progress: 74 remaining
+08:26:23 INFO HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 404 Not Found"
+08:26:23 WARNING batch [91, 92, 93] failed on openrouter/gpt-oss-120b: Error code: 404 - {'error': {'message': 'This model is unavailable for free. The paid version is available now - use this slug instead: openai/gpt-oss-120b', 'code': 404}, 'user_id': 'user_3KLqOajoEHK
+08:26:28 INFO seed 91 rejected (attempt 2): missing from teacher output
+08:26:28 INFO seed 92 rejected (attempt 2): missing from teacher output
+08:26:28 INFO seed 93 rejected (attempt 2): missing from teacher output
+08:26:28 INFO progress: 74 remaining
+08:26:28 INFO HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 404 Not Found"
+08:26:28 WARNING batch [94, 95, 96] failed on openrouter/gpt-oss-120b: Error code: 404 - {'error': {'message': 'This model is unavailable for free. The paid version is available now - use this slug instead: openai/gpt-oss-120b', 'code': 404}, 'user_id': 'user_3KLqOajoEHK
+08:26:33 INFO seed 94 rejected (attempt 2): missing from teacher output
+08:26:33 INFO seed 95 rejected (attempt 2): missing from teacher output
+08:26:33 INFO seed 96 rejected (attempt 2): missing from teacher output
+08:26:33 INFO progress: 74 remaining
+08:26:34 INFO HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 404 Not Found"
+08:26:34 WARNING batch [97, 98, 99] failed on openrouter/gpt-oss-120b: Error code: 404 - {'error': {'message': 'This model is unavailable for free. The paid version is available now - use this slug instead: openai/gpt-oss-120b', 'code': 404}, 'user_id': 'user_3KLqOajoEHK
+08:26:39 INFO seed 97 rejected (attempt 2): missing from teacher output
+08:26:39 INFO seed 98 rejected (attempt 2): missing from teacher output
+08:26:39 INFO seed 99 rejected (attempt 2): missing from teacher output
+08:26:39 INFO progress: 74 remaining
+08:26:39 INFO HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 404 Not Found"
+08:26:39 WARNING batch [100, 101, 102] failed on openrouter/gpt-oss-120b: Error code: 404 - {'error': {'message': 'This model is unavailable for free. The paid version is available now - use this slug instead: openai/gpt-oss-120b', 'code': 404}, 'user_id': 'user_3KLqOajoEHK
+08:26:44 INFO seed 100 rejected (attempt 2): missing from teacher output
+08:26:44 INFO seed 101 rejected (attempt 2): missing from teacher output
+08:26:44 INFO seed 102 rejected (attempt 2): missing from teacher output
+08:26:44 INFO progress: 74 remaining
+08:26:47 INFO HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 404 Not Found"
+08:26:47 WARNING batch [103, 104, 105] failed on openrouter/gpt-oss-120b: Error code: 404 - {'error': {'message': 'This model is unavailable for free. The paid version is available now - use this slug instead: openai/gpt-oss-120b', 'code': 404}, 'user_id': 'user_3KLqOajoEHK
+08:26:52 INFO seed 103 rejected (attempt 2): missing from teacher output
+08:26:52 INFO seed 104 rejected (attempt 2): missing from teacher output
+08:26:52 INFO seed 105 rejected (attempt 2): missing from teacher output
+08:26:52 INFO progress: 74 remaining
+08:26:52 INFO HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 404 Not Found"
+08:26:52 WARNING batch [106, 107, 108] failed on openrouter/gpt-oss-120b: Error code: 404 - {'error': {'message': 'This model is unavailable for free. The paid version is available now - use this slug instead: openai/gpt-oss-120b', 'code': 404}, 'user_id': 'user_3KLqOajoEHK
+08:26:57 INFO seed 106 rejected (attempt 2): missing from teacher output
+08:26:57 INFO seed 107 rejected (attempt 2): missing from teacher output
+08:26:57 INFO seed 108 rejected (attempt 2): missing from teacher output
+08:26:57 INFO progress: 74 remaining
+08:26:58 INFO HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 404 Not Found"
+08:26:58 WARNING batch [109, 110, 111] failed on openrouter/gpt-oss-120b: Error code: 404 - {'error': {'message': 'This model is unavailable for free. The paid version is available now - use this slug instead: openai/gpt-oss-120b', 'code': 404}, 'user_id': 'user_3KLqOajoEHK
+08:27:03 INFO seed 109 rejected (attempt 2): missing from teacher output
+08:27:03 INFO seed 110 rejected (attempt 2): missing from teacher output
+08:27:03 INFO seed 111 rejected (attempt 2): missing from teacher output
+08:27:03 INFO progress: 74 remaining
+08:27:04 INFO HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 404 Not Found"
+08:27:04 WARNING batch [112, 113, 114] failed on openrouter/gpt-oss-120b: Error code: 404 - {'error': {'message': 'This model is unavailable for free. The paid version is available now - use this slug instead: openai/gpt-oss-120b', 'code': 404}, 'user_id': 'user_3KLqOajoEHK
+08:27:09 INFO seed 112 rejected (attempt 2): missing from teacher output
+08:27:09 INFO seed 113 rejected (attempt 2): missing from teacher output
+08:27:09 INFO seed 114 rejected (attempt 2): missing from teacher output
+08:27:09 INFO progress: 74 remaining
+08:27:09 INFO HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 404 Not Found"
+08:27:09 WARNING batch [115, 116, 117] failed on openrouter/gpt-oss-120b: Error code: 404 - {'error': {'message': 'This model is unavailable for free. The paid version is available now - use this slug instead: openai/gpt-oss-120b', 'code': 404}, 'user_id': 'user_3KLqOajoEHK
+08:27:14 INFO seed 115 rejected (attempt 2): missing from teacher output
+08:27:14 INFO seed 116 rejected (attempt 2): missing from teacher output
+08:27:14 INFO seed 117 rejected (attempt 2): missing from teacher output
+08:27:14 INFO progress: 74 remaining
+08:27:15 INFO HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 404 Not Found"
+08:27:15 WARNING batch [118, 119, 120] failed on openrouter/gpt-oss-120b: Error code: 404 - {'error': {'message': 'This model is unavailable for free. The paid version is available now - use this slug instead: openai/gpt-oss-120b', 'code': 404}, 'user_id': 'user_3KLqOajoEHK
+08:27:20 INFO seed 118 rejected (attempt 2): missing from teacher output
+08:27:20 INFO seed 119 rejected (attempt 2): missing from teacher output
+08:27:20 INFO seed 120 rejected (attempt 2): missing from teacher output
+08:27:20 INFO progress: 74 remaining
+08:27:20 INFO HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 404 Not Found"
+08:27:20 WARNING batch [121, 122, 123] failed on openrouter/gpt-oss-120b: Error code: 404 - {'error': {'message': 'This model is unavailable for free. The paid version is available now - use this slug instead: openai/gpt-oss-120b', 'code': 404}, 'user_id': 'user_3KLqOajoEHK
+08:28:12 INFO 76/150 cases present, 74 to generate
+08:28:22 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+08:28:22 INFO seed 1 rejected (attempt 1): ungrounded figure: '990,000.00'
+08:28:22 INFO progress: 72 remaining
+08:28:23 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+08:28:23 WARNING teacher groq/gpt-oss-120b unavailable: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01m4a9k53ye54t1y5yq4m4rw1j` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 197342, Requested 7116. Please try again in 32m5.856s. Need more tokens? Upgrade to Dev Ti
+08:28:23 WARNING teacher groq/gpt-oss-120b exhausted; rotating
+08:28:30 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+08:28:30 INFO progress: 69 remaining
+08:28:31 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+08:28:31 INFO Retrying request in 11.000000 seconds (retry 1 of 6)
+08:28:48 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+08:28:48 INFO seed 35 rejected (attempt 1): 1 validation error for Alert
+transactions.8.amount
+  Input should be greater than 0 [type=greater_than, input_value=0.0, input_type=float]
+    For further infor
+08:28:48 INFO progress: 67 remaining
+08:28:49 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+08:28:49 WARNING batch [43, 51, 54] failed on groq/qwen3.8-27b: Error code: 429 - {'error': {'message': "Request too large for model `qwen/qwen3.8-27b` in organization `org_01m4a9k53ye54t1y5yq4m4rw1j` service tier `on_demand` on output tokens per minute (OTPM): Li
+08:28:54 INFO seed 43 rejected (attempt 1): missing from teacher output
+08:28:54 INFO seed 51 rejected (attempt 1): missing from teacher output
+08:28:54 INFO seed 54 rejected (attempt 1): missing from teacher output
+08:28:54 INFO progress: 67 remaining
+08:28:54 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+08:28:54 WARNING batch [56, 86, 90] failed on groq/qwen3.8-27b: Error code: 429 - {'error': {'message': "Request too large for model `qwen/qwen3.8-27b` in organization `org_01m4a9k53ye54t1y5yq4m4rw1j` service tier `on_demand` on output tokens per minute (OTPM): Li
+08:28:59 INFO seed 56 rejected (attempt 1): missing from teacher output
+08:28:59 INFO seed 86 rejected (attempt 1): missing from teacher output
+08:28:59 INFO seed 90 rejected (attempt 1): missing from teacher output
+08:28:59 INFO progress: 67 remaining
+08:29:07 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+08:29:07 INFO seed 92 rejected (attempt 1): ungrounded figure: '1,600'
+08:29:07 INFO progress: 65 remaining
+08:29:07 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+08:29:07 INFO Retrying request in 12.000000 seconds (retry 1 of 6)
+08:29:20 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+08:29:20 WARNING batch [94, 95, 96] failed on groq/qwen3.8-27b: Error code: 429 - {'error': {'message': "Request too large for model `qwen/qwen3.8-27b` in organization `org_01m4a9k53ye54t1y5yq4m4rw1j` service tier `on_demand` on output tokens per minute (OTPM): Li
+08:29:25 INFO seed 94 rejected (attempt 1): missing from teacher output
+08:29:25 INFO seed 95 rejected (attempt 1): missing from teacher output
+08:29:25 INFO seed 96 rejected (attempt 1): missing from teacher output
+08:29:25 INFO progress: 65 remaining
+08:29:25 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+08:29:25 WARNING batch [97, 98, 99] failed on groq/qwen3.8-27b: Error code: 429 - {'error': {'message': "Request too large for model `qwen/qwen3.8-27b` in organization `org_01m4a9k53ye54t1y5yq4m4rw1j` service tier `on_demand` on output tokens per minute (OTPM): Li
+08:29:30 INFO seed 97 rejected (attempt 1): missing from teacher output
+08:29:30 INFO seed 98 rejected (attempt 1): missing from teacher output
+08:29:30 INFO seed 99 rejected (attempt 1): missing from teacher output
+08:29:30 INFO progress: 65 remaining
+08:29:30 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+08:29:30 WARNING batch [100, 101, 102] failed on groq/qwen3.8-27b: Error code: 429 - {'error': {'message': "Request too large for model `qwen/qwen3.8-27b` in organization `org_01m4a9k53ye54t1y5yq4m4rw1j` service tier `on_demand` on output tokens per minute (OTPM): Li
+08:29:35 INFO seed 100 rejected (attempt 1): missing from teacher output
+08:29:35 INFO seed 101 rejected (attempt 1): missing from teacher output
+08:29:35 INFO seed 102 rejected (attempt 1): missing from teacher output
+08:29:35 INFO progress: 65 remaining
+08:29:36 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+08:29:36 WARNING batch [103, 104, 105] failed on groq/qwen3.8-27b: Error code: 429 - {'error': {'message': "Request too large for model `qwen/qwen3.8-27b` in organization `org_01m4a9k53ye54t1y5yq4m4rw1j` service tier `on_demand` on output tokens per minute (OTPM): Li
+08:29:41 INFO seed 103 rejected (attempt 1): missing from teacher output
+08:29:41 INFO seed 104 rejected (attempt 1): missing from teacher output
+08:29:41 INFO seed 105 rejected (attempt 1): missing from teacher output
+08:29:41 INFO progress: 65 remaining
+08:29:42 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+08:29:42 WARNING batch [106, 107, 108] failed on groq/qwen3.8-27b: Error code: 429 - {'error': {'message': "Request too large for model `qwen/qwen3.8-27b` in organization `org_01m4a9k53ye54t1y5yq4m4rw1j` service tier `on_demand` on output tokens per minute (OTPM): Li
+08:29:47 INFO seed 106 rejected (attempt 1): missing from teacher output
+08:29:47 INFO seed 107 rejected (attempt 1): missing from teacher output
+08:29:47 INFO seed 108 rejected (attempt 1): missing from teacher output
+08:29:47 INFO progress: 65 remaining
+08:29:47 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+08:29:47 WARNING batch [109, 110, 111] failed on groq/qwen3.8-27b: Error code: 429 - {'error': {'message': "Request too large for model `qwen/qwen3.8-27b` in organization `org_01m4a9k53ye54t1y5yq4m4rw1j` service tier `on_demand` on output tokens per minute (OTPM): Li
+08:29:52 INFO seed 109 rejected (attempt 1): missing from teacher output
+08:29:52 INFO seed 110 rejected (attempt 1): missing from teacher output
+08:29:52 INFO seed 111 rejected (attempt 1): missing from teacher output
+08:29:52 INFO progress: 65 remaining
+08:29:52 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+08:29:52 WARNING batch [112, 113, 114] failed on groq/qwen3.8-27b: Error code: 429 - {'error': {'message': "Request too large for model `qwen/qwen3.8-27b` in organization `org_01m4a9k53ye54t1y5yq4m4rw1j` service tier `on_demand` on output tokens per minute (OTPM): Li
+08:29:57 INFO seed 112 rejected (attempt 1): missing from teacher output
+08:29:57 INFO seed 113 rejected (attempt 1): missing from teacher output
+08:29:57 INFO seed 114 rejected (attempt 1): missing from teacher output
+08:29:57 INFO progress: 65 remaining
+08:29:57 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+08:29:57 WARNING batch [115, 116, 117] failed on groq/qwen3.8-27b: Error code: 429 - {'error': {'message': "Request too large for model `qwen/qwen3.8-27b` in organization `org_01m4a9k53ye54t1y5yq4m4rw1j` service tier `on_demand` on output tokens per minute (OTPM): Li
+08:30:02 INFO seed 115 rejected (attempt 1): missing from teacher output
+08:30:02 INFO seed 116 rejected (attempt 1): missing from teacher output
+08:30:02 INFO seed 117 rejected (attempt 1): missing from teacher output
+08:30:02 INFO progress: 65 remaining
+08:30:02 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+08:30:02 WARNING batch [118, 119, 120] failed on groq/qwen3.8-27b: Error code: 429 - {'error': {'message': "Request too large for model `qwen/qwen3.8-27b` in organization `org_01m4a9k53ye54t1y5yq4m4rw1j` service tier `on_demand` on output tokens per minute (OTPM): Li
+08:30:07 INFO seed 118 rejected (attempt 1): missing from teacher output
+08:30:07 INFO seed 119 rejected (attempt 1): missing from teacher output
+08:30:07 INFO seed 120 rejected (attempt 1): missing from teacher output
+08:30:07 INFO progress: 65 remaining
+08:30:07 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+08:30:07 WARNING batch [121, 122, 123] failed on groq/qwen3.8-27b: Error code: 429 - {'error': {'message': "Request too large for model `qwen/qwen3.8-27b` in organization `org_01m4a9k53ye54t1y5yq4m4rw1j` service tier `on_demand` on output tokens per minute (OTPM): Li
+08:30:12 INFO seed 121 rejected (attempt 1): missing from teacher output
+08:30:12 INFO seed 122 rejected (attempt 1): missing from teacher output
+08:30:12 INFO seed 123 rejected (attempt 1): missing from teacher output
+08:30:12 INFO progress: 65 remaining
+08:30:13 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+08:30:13 WARNING batch [124, 125, 126] failed on groq/qwen3.8-27b: Error code: 429 - {'error': {'message': "Request too large for model `qwen/qwen3.8-27b` in organization `org_01m4a9k53ye54t1y5yq4m4rw1j` service tier `on_demand` on output tokens per minute (OTPM): Li
+08:30:18 INFO seed 124 rejected (attempt 1): missing from teacher output
+08:30:18 INFO seed 125 rejected (attempt 1): missing from teacher output
+08:30:18 INFO seed 126 rejected (attempt 1): missing from teacher output
+08:30:18 INFO progress: 65 remaining
+08:30:18 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+08:30:18 WARNING batch [127, 128, 129] failed on groq/qwen3.8-27b: Error code: 429 - {'error': {'message': "Request too large for model `qwen/qwen3.8-27b` in organization `org_01m4a9k53ye54t1y5yq4m4rw1j` service tier `on_demand` on output tokens per minute (OTPM): Li
+08:30:23 INFO seed 127 rejected (attempt 1): missing from teacher output
+08:30:23 INFO seed 128 rejected (attempt 1): missing from teacher output
+08:30:23 INFO seed 129 rejected (attempt 1): missing from teacher output
+08:30:23 INFO progress: 65 remaining
+08:30:24 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+08:30:24 WARNING batch [130, 131, 132] failed on groq/qwen3.8-27b: Error code: 429 - {'error': {'message': "Request too large for model `qwen/qwen3.8-27b` in organization `org_01m4a9k53ye54t1y5yq4m4rw1j` service tier `on_demand` on output tokens per minute (OTPM): Li
+08:30:29 INFO seed 130 rejected (attempt 1): missing from teacher output
+08:30:29 INFO seed 131 rejected (attempt 1): missing from teacher output
+08:30:29 INFO seed 132 rejected (attempt 1): missing from teacher output
+08:30:29 INFO progress: 65 remaining
+08:30:29 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+08:30:29 WARNING batch [133, 134, 135] failed on groq/qwen3.8-27b: Error code: 429 - {'error': {'message': "Request too large for model `qwen/qwen3.8-27b` in organization `org_01m4a9k53ye54t1y5yq4m4rw1j` service tier `on_demand` on output tokens per minute (OTPM): Li
+08:30:34 INFO seed 133 rejected (attempt 1): missing from teacher output
+08:30:34 INFO seed 134 rejected (attempt 1): missing from teacher output
+08:30:34 INFO seed 135 rejected (attempt 1): missing from teacher output
+08:30:34 INFO progress: 65 remaining
+08:30:36 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+08:30:36 WARNING batch [136, 137, 138] failed on groq/qwen3.8-27b: Error code: 429 - {'error': {'message': "Request too large for model `qwen/qwen3.8-27b` in organization `org_01m4a9k53ye54t1y5yq4m4rw1j` service tier `on_demand` on output tokens per minute (OTPM): Li
+08:30:41 INFO seed 136 rejected (attempt 1): missing from teacher output
+08:30:41 INFO seed 137 rejected (attempt 1): missing from teacher output
+08:30:41 INFO seed 138 rejected (attempt 1): missing from teacher output
+08:30:41 INFO progress: 65 remaining
+08:30:43 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+08:30:43 WARNING batch [139, 140, 141] failed on groq/qwen3.8-27b: Error code: 429 - {'error': {'message': "Request too large for model `qwen/qwen3.8-27b` in organization `org_01m4a9k53ye54t1y5yq4m4rw1j` service tier `on_demand` on output tokens per minute (OTPM): Li
+08:30:48 INFO seed 139 rejected (attempt 1): missing from teacher output
+08:30:48 INFO seed 140 rejected (attempt 1): missing from teacher output
+08:30:48 INFO seed 141 rejected (attempt 1): missing from teacher output
+08:30:48 INFO progress: 65 remaining
+08:30:49 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+08:30:49 WARNING batch [142, 143, 144] failed on groq/qwen3.8-27b: Error code: 429 - {'error': {'message': "Request too large for model `qwen/qwen3.8-27b` in organization `org_01m4a9k53ye54t1y5yq4m4rw1j` service tier `on_demand` on output tokens per minute (OTPM): Li
+08:30:54 INFO seed 142 rejected (attempt 1): missing from teacher output
+08:30:54 INFO seed 143 rejected (attempt 1): missing from teacher output
+08:30:54 INFO seed 144 rejected (attempt 1): missing from teacher output
+08:30:54 INFO progress: 65 remaining
+08:30:54 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+08:30:54 WARNING batch [145, 146, 147] failed on groq/qwen3.8-27b: Error code: 429 - {'error': {'message': "Request too large for model `qwen/qwen3.8-27b` in organization `org_01m4a9k53ye54t1y5yq4m4rw1j` service tier `on_demand` on output tokens per minute (OTPM): Li
+08:30:59 INFO seed 145 rejected (attempt 1): missing from teacher output
+08:30:59 INFO seed 146 rejected (attempt 1): missing from teacher output
+08:30:59 INFO seed 147 rejected (attempt 1): missing from teacher output
+08:30:59 INFO progress: 65 remaining
+08:31:00 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+08:31:00 WARNING batch [148, 149, 1] failed on groq/qwen3.8-27b: Error code: 429 - {'error': {'message': "Request too large for model `qwen/qwen3.8-27b` in organization `org_01m4a9k53ye54t1y5yq4m4rw1j` service tier `on_demand` on output tokens per minute (OTPM): Li
+08:31:05 INFO seed 148 rejected (attempt 1): missing from teacher output
+08:31:05 INFO seed 149 rejected (attempt 1): missing from teacher output
+08:31:05 INFO seed 1 rejected (attempt 2): missing from teacher output
+08:31:05 INFO progress: 65 remaining
+08:31:08 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+08:31:08 WARNING batch [35, 43, 51] failed on groq/qwen3.8-27b: Error code: 429 - {'error': {'message': "Request too large for model `qwen/qwen3.8-27b` in organization `org_01m4a9k53ye54t1y5yq4m4rw1j` service tier `on_demand` on output tokens per minute (OTPM): Li
+08:31:13 INFO seed 35 rejected (attempt 2): missing from teacher output
+08:31:13 INFO seed 43 rejected (attempt 2): missing from teacher output
+08:31:13 INFO seed 51 rejected (attempt 2): missing from teacher output
+08:31:13 INFO progress: 65 remaining
+08:31:16 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+08:31:16 WARNING batch [54, 56, 86] failed on groq/qwen3.8-27b: Error code: 429 - {'error': {'message': "Request too large for model `qwen/qwen3.8-27b` in organization `org_01m4a9k53ye54t1y5yq4m4rw1j` service tier `on_demand` on output tokens per minute (OTPM): Li
+08:31:21 INFO seed 54 rejected (attempt 2): missing from teacher output
+08:31:21 INFO seed 56 rejected (attempt 2): missing from teacher output
+08:31:21 INFO seed 86 rejected (attempt 2): missing from teacher output
+08:31:21 INFO progress: 65 remaining
+08:31:23 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+08:31:23 WARNING batch [90, 92, 94] failed on groq/qwen3.8-27b: Error code: 429 - {'error': {'message': "Request too large for model `qwen/qwen3.8-27b` in organization `org_01m4a9k53ye54t1y5yq4m4rw1j` service tier `on_demand` on output tokens per minute (OTPM): Li
+08:31:28 INFO seed 90 rejected (attempt 2): missing from teacher output
+08:31:28 INFO seed 92 rejected (attempt 2): missing from teacher output
+08:31:28 INFO seed 94 rejected (attempt 2): missing from teacher output
+08:31:28 INFO progress: 65 remaining
+08:31:30 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+08:31:30 WARNING batch [95, 96, 97] failed on groq/qwen3.8-27b: Error code: 429 - {'error': {'message': "Request too large for model `qwen/qwen3.8-27b` in organization `org_01m4a9k53ye54t1y5yq4m4rw1j` service tier `on_demand` on output tokens per minute (OTPM): Li
+08:31:35 INFO seed 95 rejected (attempt 2): missing from teacher output
+08:31:35 INFO seed 96 rejected (attempt 2): missing from teacher output
+08:31:35 INFO seed 97 rejected (attempt 2): missing from teacher output
+08:31:35 INFO progress: 65 remaining
+08:31:36 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+08:31:36 WARNING batch [98, 99, 100] failed on groq/qwen3.8-27b: Error code: 429 - {'error': {'message': "Request too large for model `qwen/qwen3.8-27b` in organization `org_01m4a9k53ye54t1y5yq4m4rw1j` service tier `on_demand` on output tokens per minute (OTPM): Li
+08:31:41 INFO seed 98 rejected (attempt 2): missing from teacher output
+08:31:41 INFO seed 99 rejected (attempt 2): missing from teacher output
+08:31:41 INFO seed 100 rejected (attempt 2): missing from teacher output
+08:31:41 INFO progress: 65 remaining
+08:31:42 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+08:31:42 WARNING batch [101, 102, 103] failed on groq/qwen3.8-27b: Error code: 429 - {'error': {'message': "Request too large for model `qwen/qwen3.8-27b` in organization `org_01m4a9k53ye54t1y5yq4m4rw1j` service tier `on_demand` on output tokens per minute (OTPM): Li
+08:31:47 INFO seed 101 rejected (attempt 2): missing from teacher output
+08:31:47 INFO seed 102 rejected (attempt 2): missing from teacher output
+08:31:47 INFO seed 103 rejected (attempt 2): missing from teacher output
+08:31:47 INFO progress: 65 remaining
+08:31:47 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+08:31:47 WARNING batch [104, 105, 106] failed on groq/qwen3.8-27b: Error code: 429 - {'error': {'message': "Request too large for model `qwen/qwen3.8-27b` in organization `org_01m4a9k53ye54t1y5yq4m4rw1j` service tier `on_demand` on output tokens per minute (OTPM): Li
+08:31:52 INFO seed 104 rejected (attempt 2): missing from teacher output
+08:31:52 INFO seed 105 rejected (attempt 2): missing from teacher output
+08:31:52 INFO seed 106 rejected (attempt 2): missing from teacher output
+08:31:52 INFO progress: 65 remaining
+08:31:55 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+08:31:55 WARNING batch [107, 108, 109] failed on groq/qwen3.8-27b: Error code: 429 - {'error': {'message': "Request too large for model `qwen/qwen3.8-27b` in organization `org_01m4a9k53ye54t1y5yq4m4rw1j` service tier `on_demand` on output tokens per minute (OTPM): Li
+08:32:00 INFO seed 107 rejected (attempt 2): missing from teacher output
+08:32:00 INFO seed 108 rejected (attempt 2): missing from teacher output
+08:32:00 INFO seed 109 rejected (attempt 2): missing from teacher output
+08:32:00 INFO progress: 65 remaining
+08:32:04 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+08:32:04 WARNING batch [110, 111, 112] failed on groq/qwen3.8-27b: Error code: 429 - {'error': {'message': "Request too large for model `qwen/qwen3.8-27b` in organization `org_01m4a9k53ye54t1y5yq4m4rw1j` service tier `on_demand` on output tokens per minute (OTPM): Li
+08:32:09 INFO seed 110 rejected (attempt 2): missing from teacher output
+08:32:09 INFO seed 111 rejected (attempt 2): missing from teacher output
+08:32:09 INFO seed 112 rejected (attempt 2): missing from teacher output
+08:32:09 INFO progress: 65 remaining
+08:32:10 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+08:32:10 WARNING batch [113, 114, 115] failed on groq/qwen3.8-27b: Error code: 429 - {'error': {'message': "Request too large for model `qwen/qwen3.8-27b` in organization `org_01m4a9k53ye54t1y5yq4m4rw1j` service tier `on_demand` on output tokens per minute (OTPM): Li
+08:32:15 INFO seed 113 rejected (attempt 2): missing from teacher output
+08:32:15 INFO seed 114 rejected (attempt 2): missing from teacher output
+08:32:15 INFO seed 115 rejected (attempt 2): missing from teacher output
+08:32:15 INFO progress: 65 remaining
+08:32:15 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+08:32:15 WARNING batch [116, 117, 118] failed on groq/qwen3.8-27b: Error code: 429 - {'error': {'message': "Request too large for model `qwen/qwen3.8-27b` in organization `org_01m4a9k53ye54t1y5yq4m4rw1j` service tier `on_demand` on output tokens per minute (OTPM): Li
+08:32:20 INFO seed 116 rejected (attempt 2): missing from teacher output
+08:32:20 INFO seed 117 rejected (attempt 2): missing from teacher output
+08:32:20 INFO seed 118 rejected (attempt 2): missing from teacher output
+08:32:20 INFO progress: 65 remaining
+08:32:21 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+08:32:21 WARNING batch [119, 120, 121] failed on groq/qwen3.8-27b: Error code: 429 - {'error': {'message': "Request too large for model `qwen/qwen3.8-27b` in organization `org_01m4a9k53ye54t1y5yq4m4rw1j` service tier `on_demand` on output tokens per minute (OTPM): Li
+08:32:26 INFO seed 119 rejected (attempt 2): missing from teacher output
+08:32:26 INFO seed 120 rejected (attempt 2): missing from teacher output
+08:32:26 INFO seed 121 rejected (attempt 2): missing from teacher output
+08:32:26 INFO progress: 65 remaining
+08:32:27 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+08:32:27 WARNING batch [122, 123, 124] failed on groq/qwen3.8-27b: Error code: 429 - {'error': {'message': "Request too large for model `qwen/qwen3.8-27b` in organization `org_01m4a9k53ye54t1y5yq4m4rw1j` service tier `on_demand` on output tokens per minute (OTPM): Li
+08:32:32 INFO seed 122 rejected (attempt 2): missing from teacher output
+08:32:32 INFO seed 123 rejected (attempt 2): missing from teacher output
+08:32:32 INFO seed 124 rejected (attempt 2): missing from teacher output
+08:32:32 INFO progress: 65 remaining
+08:32:33 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+08:32:33 WARNING batch [125, 126, 127] failed on groq/qwen3.8-27b: Error code: 429 - {'error': {'message': "Request too large for model `qwen/qwen3.8-27b` in organization `org_01m4a9k53ye54t1y5yq4m4rw1j` service tier `on_demand` on output tokens per minute (OTPM): Li
+08:32:38 INFO seed 125 rejected (attempt 2): missing from teacher output
+08:32:38 INFO seed 126 rejected (attempt 2): missing from teacher output
+08:32:38 INFO seed 127 rejected (attempt 2): missing from teacher output
+08:32:38 INFO progress: 65 remaining
+08:32:40 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+08:32:40 WARNING batch [128, 129, 130] failed on groq/qwen3.8-27b: Error code: 429 - {'error': {'message': "Request too large for model `qwen/qwen3.8-27b` in organization `org_01m4a9k53ye54t1y5yq4m4rw1j` service tier `on_demand` on output tokens per minute (OTPM): Li
+08:32:45 INFO seed 128 rejected (attempt 2): missing from teacher output
+08:32:45 INFO seed 129 rejected (attempt 2): missing from teacher output
+08:32:45 INFO seed 130 rejected (attempt 2): missing from teacher output
+08:32:45 INFO progress: 65 remaining
+08:32:46 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+08:32:46 WARNING batch [131, 132, 133] failed on groq/qwen3.8-27b: Error code: 429 - {'error': {'message': "Request too large for model `qwen/qwen3.8-27b` in organization `org_01m4a9k53ye54t1y5yq4m4rw1j` service tier `on_demand` on output tokens per minute (OTPM): Li
+08:32:51 INFO seed 131 rejected (attempt 2): missing from teacher output
+08:32:51 INFO seed 132 rejected (attempt 2): missing from teacher output
+08:32:51 INFO seed 133 rejected (attempt 2): missing from teacher output
+08:32:51 INFO progress: 65 remaining
+08:32:52 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+08:32:52 WARNING batch [134, 135, 136] failed on groq/qwen3.8-27b: Error code: 429 - {'error': {'message': "Request too large for model `qwen/qwen3.8-27b` in organization `org_01m4a9k53ye54t1y5yq4m4rw1j` service tier `on_demand` on output tokens per minute (OTPM): Li
+08:32:57 INFO seed 134 rejected (attempt 2): missing from teacher output
+08:32:57 INFO seed 135 rejected (attempt 2): missing from teacher output
+08:32:57 INFO seed 136 rejected (attempt 2): missing from teacher output
+08:32:57 INFO progress: 65 remaining
+08:32:58 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+08:32:58 WARNING batch [137, 138, 139] failed on groq/qwen3.8-27b: Error code: 429 - {'error': {'message': "Request too large for model `qwen/qwen3.8-27b` in organization `org_01m4a9k53ye54t1y5yq4m4rw1j` service tier `on_demand` on output tokens per minute (OTPM): Li
+08:33:03 INFO seed 137 rejected (attempt 2): missing from teacher output
+08:33:03 INFO seed 138 rejected (attempt 2): missing from teacher output
+08:33:03 INFO seed 139 rejected (attempt 2): missing from teacher output
+08:33:03 INFO progress: 65 remaining
+08:33:07 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+08:33:07 WARNING batch [140, 141, 142] failed on groq/qwen3.8-27b: Error code: 429 - {'error': {'message': "Request too large for model `qwen/qwen3.8-27b` in organization `org_01m4a9k53ye54t1y5yq4m4rw1j` service tier `on_demand` on output tokens per minute (OTPM): Li
+08:33:12 INFO seed 140 rejected (attempt 2): missing from teacher output
+08:33:12 INFO seed 141 rejected (attempt 2): missing from teacher output
+08:33:12 INFO seed 142 rejected (attempt 2): missing from teacher output
+08:33:12 INFO progress: 65 remaining
+08:33:13 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+08:33:13 WARNING batch [143, 144, 145] failed on groq/qwen3.8-27b: Error code: 429 - {'error': {'message': "Request too large for model `qwen/qwen3.8-27b` in organization `org_01m4a9k53ye54t1y5yq4m4rw1j` service tier `on_demand` on output tokens per minute (OTPM): Li
+08:33:18 INFO seed 143 rejected (attempt 2): missing from teacher output
+08:33:18 INFO seed 144 rejected (attempt 2): missing from teacher output
+08:33:18 INFO seed 145 rejected (attempt 2): missing from teacher output
+08:33:18 INFO progress: 65 remaining
+08:33:20 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+08:33:20 WARNING batch [146, 147, 148] failed on groq/qwen3.8-27b: Error code: 429 - {'error': {'message': "Request too large for model `qwen/qwen3.8-27b` in organization `org_01m4a9k53ye54t1y5yq4m4rw1j` service tier `on_demand` on output tokens per minute (OTPM): Li
+08:33:25 INFO seed 146 rejected (attempt 2): missing from teacher output
+08:33:25 INFO seed 147 rejected (attempt 2): missing from teacher output
+08:33:25 INFO seed 148 rejected (attempt 2): missing from teacher output
+08:33:25 INFO progress: 65 remaining
+08:33:27 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+08:33:27 WARNING batch [149, 1, 35] failed on groq/qwen3.8-27b: Error code: 429 - {'error': {'message': "Request too large for model `qwen/qwen3.8-27b` in organization `org_01m4a9k53ye54t1y5yq4m4rw1j` service tier `on_demand` on output tokens per minute (OTPM): Li
+08:33:32 INFO seed 149 rejected (attempt 2): missing from teacher output
+08:33:32 INFO seed 1 rejected (attempt 3): missing from teacher output
+08:33:32 INFO seed 35 rejected (attempt 3): missing from teacher output
+08:33:32 INFO progress: 65 remaining
+08:33:33 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+08:33:33 WARNING batch [43, 51, 54] failed on groq/qwen3.8-27b: Error code: 429 - {'error': {'message': "Request too large for model `qwen/qwen3.8-27b` in organization `org_01m4a9k53ye54t1y5yq4m4rw1j` service tier `on_demand` on output tokens per minute (OTPM): Li
+08:33:38 INFO seed 43 rejected (attempt 3): missing from teacher output
+08:33:38 INFO seed 51 rejected (attempt 3): missing from teacher output
+08:33:38 INFO seed 54 rejected (attempt 3): missing from teacher output
+08:33:38 INFO progress: 65 remaining
+08:33:40 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+08:33:40 WARNING batch [56, 86, 90] failed on groq/qwen3.8-27b: Error code: 429 - {'error': {'message': "Request too large for model `qwen/qwen3.8-27b` in organization `org_01m4a9k53ye54t1y5yq4m4rw1j` service tier `on_demand` on output tokens per minute (OTPM): Li
+08:33:45 INFO seed 56 rejected (attempt 3): missing from teacher output
+08:33:45 INFO seed 86 rejected (attempt 3): missing from teacher output
+08:33:45 INFO seed 90 rejected (attempt 3): missing from teacher output
+08:33:45 INFO progress: 65 remaining
+08:33:46 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+08:33:46 WARNING batch [92, 94, 95] failed on groq/qwen3.8-27b: Error code: 429 - {'error': {'message': "Request too large for model `qwen/qwen3.8-27b` in organization `org_01m4a9k53ye54t1y5yq4m4rw1j` service tier `on_demand` on output tokens per minute (OTPM): Li
+08:33:51 INFO seed 92 rejected (attempt 3): missing from teacher output
+08:33:51 INFO seed 94 rejected (attempt 3): missing from teacher output
+08:33:51 INFO seed 95 rejected (attempt 3): missing from teacher output
+08:33:51 INFO progress: 65 remaining
+08:33:58 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+08:33:58 INFO seed 98 rejected (attempt 3): typology no_suspicious_activity != seed cash_intensive_business_anomaly; ungrounded figure: '82,000.00'
+08:33:58 INFO progress: 63 remaining
+08:33:59 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+08:34:00 INFO Retrying request in 9.000000 seconds (retry 1 of 6)
+08:34:33 INFO 87/150 cases present, 63 to generate
+08:34:37 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+08:34:37 INFO Retrying request in 31.000000 seconds (retry 1 of 6)
+08:35:11 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+08:35:11 WARNING teacher groq/gpt-oss-120b unavailable: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01m4a9k53ye54t1y5yq4m4rw1j` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199970, Requested 1402. Please try again in 9m52.704s. Need more tokens? Upgrade to Dev Ti
+08:35:11 WARNING teacher groq/gpt-oss-120b exhausted; rotating
+08:35:14 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+08:35:14 INFO progress: 62 remaining
+08:35:15 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+08:35:15 INFO Retrying request in 7.000000 seconds (retry 1 of 6)
+08:35:23 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+08:35:23 WARNING batch [35] failed on groq/qwen3.8-27b (1 in a row): Error code: 429 - {'error': {'message': "Request too large for model `qwen/qwen3.8-27b` in organization `org_01m4a9k53ye54t1y5yq4m4rw1j` service tier `on_demand` on output tokens per minute (OTPM): Li
+08:35:30 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+08:35:30 WARNING batch [35] failed on groq/qwen3.8-27b (2 in a row): Error code: 429 - {'error': {'message': "Request too large for model `qwen/qwen3.8-27b` in organization `org_01m4a9k53ye54t1y5yq4m4rw1j` service tier `on_demand` on output tokens per minute (OTPM): Li
+08:35:35 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+08:35:35 WARNING batch [35] failed on groq/qwen3.8-27b (3 in a row): Error code: 429 - {'error': {'message': "Request too large for model `qwen/qwen3.8-27b` in organization `org_01m4a9k53ye54t1y5yq4m4rw1j` service tier `on_demand` on output tokens per minute (OTPM): Li
+08:35:42 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+08:35:42 WARNING batch [35] failed on groq/qwen3.8-27b (4 in a row): Error code: 429 - {'error': {'message': "Request too large for model `qwen/qwen3.8-27b` in organization `org_01m4a9k53ye54t1y5yq4m4rw1j` service tier `on_demand` on output tokens per minute (OTPM): Li
+08:35:47 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+08:35:47 WARNING batch [35] failed on groq/qwen3.8-27b (5 in a row): Error code: 429 - {'error': {'message': "Request too large for model `qwen/qwen3.8-27b` in organization `org_01m4a9k53ye54t1y5yq4m4rw1j` service tier `on_demand` on output tokens per minute (OTPM): Li
+08:35:47 WARNING teacher groq/qwen3.8-27b exhausted; rotating
+08:35:55 INFO HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+08:36:56 WARNING batch [35, 43, 51] failed on openrouter/nemotron-3-super-120b (1 in a row): Expecting value: line 1 column 1 (char 0)
+08:37:01 INFO HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+08:41:02 INFO Retrying request in 0.397942 seconds (retry 1 of 6)
+08:41:02 INFO Retrying request in 0.976948 seconds (retry 2 of 6)
+08:41:03 INFO Retrying request in 1.769165 seconds (retry 3 of 6)
+08:41:05 INFO Retrying request in 3.123773 seconds (retry 4 of 6)
+08:41:08 INFO Retrying request in 6.396902 seconds (retry 5 of 6)
+08:41:14 INFO Retrying request in 7.648229 seconds (retry 6 of 6)
+08:41:22 WARNING batch [35, 43, 51] failed on openrouter/nemotron-3-super-120b (2 in a row): Connection error.
+08:41:27 INFO Retrying request in 0.435205 seconds (retry 1 of 6)
+08:41:27 INFO Retrying request in 0.981040 seconds (retry 2 of 6)
+08:41:28 INFO Retrying request in 1.711983 seconds (retry 3 of 6)
+08:41:30 INFO Retrying request in 3.441679 seconds (retry 4 of 6)
+08:41:33 INFO Retrying request in 6.686701 seconds (retry 5 of 6)
+08:41:40 INFO Retrying request in 7.171243 seconds (retry 6 of 6)
+08:41:47 WARNING batch [35, 43, 51] failed on openrouter/nemotron-3-super-120b (3 in a row): Connection error.
+08:41:52 INFO Retrying request in 0.423417 seconds (retry 1 of 6)
+08:41:53 INFO Retrying request in 0.918215 seconds (retry 2 of 6)
+08:41:54 INFO Retrying request in 1.960486 seconds (retry 3 of 6)
+08:41:56 INFO Retrying request in 3.572234 seconds (retry 4 of 6)
+08:41:59 INFO Retrying request in 7.509017 seconds (retry 5 of 6)
+08:42:07 INFO Retrying request in 6.050213 seconds (retry 6 of 6)
+08:42:13 WARNING batch [35, 43, 51] failed on openrouter/nemotron-3-super-120b (4 in a row): Connection error.
+08:42:18 INFO Retrying request in 0.392447 seconds (retry 1 of 6)
+08:42:18 INFO Retrying request in 0.803448 seconds (retry 2 of 6)
+08:42:19 INFO Retrying request in 1.867337 seconds (retry 3 of 6)
+08:42:21 INFO Retrying request in 3.727244 seconds (retry 4 of 6)
+08:42:25 INFO Retrying request in 7.319008 seconds (retry 5 of 6)
+08:42:32 INFO Retrying request in 6.069882 seconds (retry 6 of 6)
+08:42:38 WARNING batch [35, 43, 51] failed on openrouter/nemotron-3-super-120b (5 in a row): Connection error.
+08:42:38 WARNING teacher openrouter/nemotron-3-super-120b exhausted; rotating
+08:42:38 ERROR all teachers exhausted; resume later (progress is saved)
+88 valid cases in C:\Users\Techon Computers\Documents\Assesment\task2_genai\data\raw_cases.jsonl
+08:46:14 INFO 88/150 cases present, 62 to generate
+08:46:15 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+08:46:15 WARNING teacher groq/gpt-oss-120b unavailable: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01m4a9k53ye54t1y5yq4m4rw1j` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 198434, Requested 1756. Please try again in 1m22.08s. Need more tokens? Upgrade to Dev Tie
+08:46:15 WARNING teacher groq/gpt-oss-120b exhausted; rotating
+08:46:18 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+08:46:18 INFO seed 35 rejected (attempt 1): ungrounded figure: '19,970'
+08:46:18 INFO progress: 62 remaining
+08:46:19 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+08:46:19 INFO Retrying request in 1.000000 seconds (retry 1 of 6)
+08:46:21 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+08:46:21 WARNING batch [43] failed on groq/qwen3.8-27b (1 in a row): Error code: 429 - {'error': {'message': "Request too large for model `qwen/qwen3.8-27b` in organization `org_01m4a9k53ye54t1y5yq4m4rw1j` service tier `on_demand` on output tokens per minute (OTPM): Li
+08:46:54 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+08:46:54 INFO progress: 61 remaining
+08:46:54 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+08:46:54 INFO Retrying request in 1.000000 seconds (retry 1 of 6)
+08:46:58 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+08:46:58 INFO progress: 60 remaining
+08:46:58 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+08:46:58 INFO Retrying request in 8.000000 seconds (retry 1 of 6)
+08:47:09 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+08:47:09 INFO progress: 59 remaining
+08:47:09 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+08:47:09 WARNING batch [56] failed on groq/qwen3.8-27b (1 in a row): Error code: 429 - {'error': {'message': "Request too large for model `qwen/qwen3.8-27b` in organization `org_01m4a9k53ye54t1y5yq4m4rw1j` service tier `on_demand` on output tokens per minute (OTPM): Li
+08:47:40 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+08:47:40 WARNING batch [56] failed on groq/qwen3.8-27b (2 in a row): Error code: 429 - {'error': {'message': "Request too large for model `qwen/qwen3.8-27b` in organization `org_01m4a9k53ye54t1y5yq4m4rw1j` service tier `on_demand` on output tokens per minute (OTPM): Li
+08:48:10 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+08:48:10 WARNING batch [56] failed on groq/qwen3.8-27b (3 in a row): Error code: 429 - {'error': {'message': "Request too large for model `qwen/qwen3.8-27b` in organization `org_01m4a9k53ye54t1y5yq4m4rw1j` service tier `on_demand` on output tokens per minute (OTPM): Li
+08:48:41 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+08:48:41 WARNING batch [56] failed on groq/qwen3.8-27b (4 in a row): Error code: 429 - {'error': {'message': "Request too large for model `qwen/qwen3.8-27b` in organization `org_01m4a9k53ye54t1y5yq4m4rw1j` service tier `on_demand` on output tokens per minute (OTPM): Li
+08:49:11 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+08:49:11 WARNING batch [56] failed on groq/qwen3.8-27b (5 in a row): Error code: 429 - {'error': {'message': "Request too large for model `qwen/qwen3.8-27b` in organization `org_01m4a9k53ye54t1y5yq4m4rw1j` service tier `on_demand` on output tokens per minute (OTPM): Li
+08:49:11 WARNING teacher groq/qwen3.8-27b exhausted; rotating
+08:49:43 INFO HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+08:50:57 WARNING batch [56, 86, 90] failed on openrouter/nemotron-3-super-120b (1 in a row): Expecting value: line 1 column 1 (char 0)
+08:51:09 INFO HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+08:52:11 WARNING batch [56, 86, 90] failed on openrouter/nemotron-3-super-120b (2 in a row): Expecting ',' delimiter: line 1 column 645 (char 644)
+08:52:23 INFO HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+08:53:42 WARNING batch [56, 86, 90] failed on openrouter/nemotron-3-super-120b (3 in a row): Expecting value: line 1 column 1 (char 0)
+08:53:55 INFO HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+21:01:34 INFO 91/150 cases present, 59 to generate
+21:01:40 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 400 Bad Request"
+21:01:40 WARNING batch [35] failed on groq/qwen3.8-27b (1 in a row): Error code: 400 - {'error': {'message': "Failed to generate JSON. Please adjust your prompt. See 'failed_generation' for more details.", 'type': 'invalid_request_error', 'code': 'json_validate_failed'
+21:01:55 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+21:01:55 INFO progress: 58 remaining
+21:01:58 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+21:01:58 INFO progress: 57 remaining
+21:01:59 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+21:01:59 WARNING batch [86] failed on groq/qwen3.8-27b (1 in a row): Error code: 429 - {'error': {'message': "Request too large for model `qwen/qwen3.8-27b` in organization `org_01m4a9k53ye54t1y5yq4m4rw1j` service tier `on_demand` on output tokens per minute (OTPM): Li
+21:02:32 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+21:02:32 WARNING batch [86] failed on groq/qwen3.8-27b (2 in a row): Error code: 429 - {'error': {'message': "Request too large for model `qwen/qwen3.8-27b` in organization `org_01m4a9k53ye54t1y5yq4m4rw1j` service tier `on_demand` on output tokens per minute (OTPM): Li
+21:03:06 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+21:03:06 INFO progress: 56 remaining
+21:03:06 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+21:03:06 WARNING batch [90] failed on groq/qwen3.8-27b (1 in a row): Error code: 429 - {'error': {'message': "Request too large for model `qwen/qwen3.8-27b` in organization `org_01m4a9k53ye54t1y5yq4m4rw1j` service tier `on_demand` on output tokens per minute (OTPM): Li
+21:19:29 INFO 96/150 cases present, 54 to generate
+21:19:32 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+21:19:32 INFO progress: 53 remaining
+21:19:32 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+21:19:32 INFO Retrying request in 42.000000 seconds (retry 1 of 6)
+21:20:15 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+21:20:15 WARNING batch [95] failed on groq/qwen3.8-27b (1 in a row): Error code: 429 - {'error': {'message': "Request too large for model `qwen/qwen3.8-27b` in organization `org_01m4a9k53ye54t1y5yq4m4rw1j` service tier `on_demand` on output tokens per minute (OTPM): Li
+21:20:45 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+21:20:45 WARNING batch [95] failed on groq/qwen3.8-27b (2 in a row): Error code: 429 - {'error': {'message': "Request too large for model `qwen/qwen3.8-27b` in organization `org_01m4a9k53ye54t1y5yq4m4rw1j` service tier `on_demand` on output tokens per minute (OTPM): Li
+21:21:18 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+21:21:18 INFO seed 95 rejected (attempt 1): ungrounded figure: '7762'; ungrounded figure: '12m'
+21:21:18 INFO progress: 53 remaining
+21:21:18 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+21:21:18 INFO Retrying request in 17.000000 seconds (retry 1 of 6)
+21:21:35 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+21:21:35 WARNING batch [98] failed on groq/qwen3.8-27b (1 in a row): Error code: 429 - {'error': {'message': "Request too large for model `qwen/qwen3.8-27b` in organization `org_01m4a9k53ye54t1y5yq4m4rw1j` service tier `on_demand` on output tokens per minute (OTPM): Li
+21:22:06 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+21:22:06 WARNING batch [98] failed on groq/qwen3.8-27b (2 in a row): Error code: 429 - {'error': {'message': "Request too large for model `qwen/qwen3.8-27b` in organization `org_01m4a9k53ye54t1y5yq4m4rw1j` service tier `on_demand` on output tokens per minute (OTPM): Li
+21:22:36 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+21:22:36 WARNING batch [98] failed on groq/qwen3.8-27b (3 in a row): Error code: 429 - {'error': {'message': "Request too large for model `qwen/qwen3.8-27b` in organization `org_01m4a9k53ye54t1y5yq4m4rw1j` service tier `on_demand` on output tokens per minute (OTPM): Li
+21:23:07 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+21:23:07 WARNING batch [98] failed on groq/qwen3.8-27b (4 in a row): Error code: 429 - {'error': {'message': "Request too large for model `qwen/qwen3.8-27b` in organization `org_01m4a9k53ye54t1y5yq4m4rw1j` service tier `on_demand` on output tokens per minute (OTPM): Li
+21:23:37 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+21:23:37 WARNING batch [98] failed on groq/qwen3.8-27b (5 in a row): Error code: 429 - {'error': {'message': "Request too large for model `qwen/qwen3.8-27b` in organization `org_01m4a9k53ye54t1y5yq4m4rw1j` service tier `on_demand` on output tokens per minute (OTPM): Li
+21:23:37 WARNING teacher groq/qwen3.8-27b exhausted; rotating
+21:24:10 INFO HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+21:25:07 WARNING batch [98, 99, 100] failed on openrouter/nemotron-3-super-120b (1 in a row): Expecting value: line 1 column 1 (char 0)
+21:25:18 INFO HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+21:26:17 WARNING batch [98, 99, 100] failed on openrouter/nemotron-3-super-120b (2 in a row): Expecting ',' delimiter: line 1 column 8154 (char 8153)
+21:26:28 INFO HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+21:27:27 WARNING batch [98, 99, 100] failed on openrouter/nemotron-3-super-120b (3 in a row): Expecting value: line 1 column 1 (char 0)
+21:27:38 INFO HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+21:28:36 INFO 97/150 cases present, 53 to generate
+21:28:46 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+21:28:46 INFO progress: 50 remaining
+21:28:55 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+21:28:55 INFO seed 100 rejected (attempt 1): ungrounded figure: '24,098'
+21:28:55 INFO progress: 48 remaining
+21:28:55 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+21:28:55 INFO Retrying request in 13.000000 seconds (retry 1 of 6)
+21:29:08 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+21:29:08 INFO Retrying request in 29.000000 seconds (retry 2 of 6)
+21:29:48 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+21:29:48 INFO progress: 45 remaining
+21:29:48 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+21:29:48 INFO Retrying request in 35.000000 seconds (retry 1 of 6)
+21:30:23 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+21:30:23 INFO Retrying request in 3.000000 seconds (retry 2 of 6)
+21:30:34 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+21:30:34 INFO progress: 42 remaining
+21:30:34 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+21:30:34 INFO Retrying request in 29.000000 seconds (retry 1 of 6)
+21:31:13 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+21:31:13 INFO seed 109 rejected (attempt 1): ungrounded figure: '150,000'
+21:31:13 INFO progress: 40 remaining
+21:31:13 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+21:31:13 INFO Retrying request in 31.000000 seconds (retry 1 of 6)
+21:31:52 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+21:31:52 INFO progress: 37 remaining
+21:31:52 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+21:31:52 INFO Retrying request in 21.000000 seconds (retry 1 of 6)
+21:32:22 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+21:32:22 INFO progress: 34 remaining
+21:32:22 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+21:32:22 INFO Retrying request in 39.000000 seconds (retry 1 of 6)
+21:33:10 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+21:33:10 INFO progress: 31 remaining
+21:33:10 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+21:33:10 INFO Retrying request in 27.000000 seconds (retry 1 of 6)
+21:33:46 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+21:33:46 INFO seed 122 rejected (attempt 1): ungrounded figure: '30,000'
+21:33:46 INFO progress: 29 remaining
+21:33:47 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+21:33:47 INFO Retrying request in 25.000000 seconds (retry 1 of 6)
+21:34:12 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+21:34:12 INFO Retrying request in 1.000000 seconds (retry 2 of 6)
+21:34:13 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+21:34:13 INFO Retrying request in 5.000000 seconds (retry 3 of 6)
+21:34:28 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+21:34:29 INFO progress: 26 remaining
+21:34:29 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+21:34:29 INFO Retrying request in 30.000000 seconds (retry 1 of 6)
+21:35:07 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+21:35:07 INFO progress: 23 remaining
+21:35:08 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+21:35:08 INFO Retrying request in 28.000000 seconds (retry 1 of 6)
+21:35:50 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+21:35:50 INFO seed 130 rejected (attempt 1): ungrounded figure: '29,000.00'
+21:35:50 INFO seed 132 rejected (attempt 1): 1 validation error for Alert
+transactions
+  List should have at most 12 items after validation, not 14 [type=too_long, input_value=[{'date': '2026-03-01', '...r
+21:35:50 INFO progress: 22 remaining
+21:35:50 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+21:35:50 INFO Retrying request in 26.000000 seconds (retry 1 of 6)
+21:36:17 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+21:36:17 INFO Retrying request in 7.000000 seconds (retry 2 of 6)
+21:36:32 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+21:36:32 INFO progress: 19 remaining
+21:36:33 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+21:36:33 WARNING teacher groq/gpt-oss-120b unavailable: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01m4a9k53ye54t1y5yq4m4rw1j` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 194740, Requested 5427. Please try again in 1m12.144s. Need more tokens? Upgrade to Dev Ti
+21:36:33 WARNING teacher groq/gpt-oss-120b exhausted; rotating
